@@ -57,7 +57,13 @@ These are suggestions that we think would make good Google Summer of Code projec
 
 ### Beats: Monitor your Java applications with JavaBeat
 
-todo
+While the Elastic Stack heavily relies on Java our monitoring capabilities in that area could use your help:
+
+* Consume all metrics from verbose GC log.
+* Collect thread counts and blocked threads.
+* Track non heap memory allocations.
+* Make it possible to compare sum of memory usages reported by the JVM versus what the operating system reports for the entire process.
+* The Beat should handle JDK8 ad JDK9 for OpenJDK and Oracle JDK on Linux and Windows.
 
 
 ### Beats: Integrate flows with protocol analyzers in Packetbeat
