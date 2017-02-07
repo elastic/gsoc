@@ -26,7 +26,7 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 ## Mentors
 
 * [Igor Motov](https://github.com/imotov)
-* Jason Wong
+* [Jason Wong](https://github.com/logmonster)
 * [Konrad Beiske](https://github.com/beiske)
 * [Nicolas Ruflin](https://github.com/ruflin)
 * [Nik Everett](https://github.com/nik9000)
