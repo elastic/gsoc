@@ -54,8 +54,15 @@ You will need to show off your skills by linking to a pull request you have subm
 
 These are suggestions that we think would make good Google Summer of Code projects. Feel free to open an issue if you wish to discuss or propose your own idea.
 
+* [Beats: Monitor your Java applications with JavaBeat](#beats_java)
+* [Beats: Integrate flows with protocol analyzers in Packetbeat](#beats_packet_protocol)
+* [Beats: Reimplement Packetbeat sniffers](#beats_packet_sniffers)
+* [Beats: More modules for Metricbeat](#beats_metric_modules)
+* [Elasticsearch Clients: Update elasticsearch-lua](#esclients_update_eslua)
 
-### Beats: Monitor your Java applications with JavaBeat
+## 
+
+### <a name="beats_java"></a>Beats: Monitor your Java applications with JavaBeat
 
 While the Elastic Stack heavily relies on Java our monitoring capabilities in that area could use your help:
 
@@ -65,25 +72,58 @@ While the Elastic Stack heavily relies on Java our monitoring capabilities in th
 * Make it possible to compare sum of memory usages reported by the JVM versus what the operating system reports for the entire process.
 * The Beat should handle JDK8 ad JDK9 for OpenJDK and Oracle JDK on Linux and Windows.
 
+## 
 
-### Beats: Integrate flows with protocol analyzers in Packetbeat
+### <a name="beats_packet_protocol"></a>Beats: Integrate flows with protocol analyzers in Packetbeat
 
 todo
 
+## 
 
-### Beats: Reimplement Packetbeat sniffers
+### <a name="beats_packet_sniffers"></a>Beats: Reimplement Packetbeat sniffers
 
 Today the sniffers are not based on a go-packet.
 
 todo
 
+## 
 
-### Beats: More modules for Metricbeat
+### <a name="beats_metric_modules"></a>Beats: More modules for Metricbeat
 
 Today Metricbeat supports Apache HTTP, Couchbase, Docker, HAProxy, Kafka, MongoDB, MySQL, nginx, PostgreSQL, Prometheus, Redis, and ZooKeeper. But we want more!
 
 Your application must include, which module or modules you want to add, why you think they should be included, and which metrics you intend to collect.
 
+## 
+
+### <a name="esclients_update_eslua"></a>Update elasticsearch-lua
+
+#### Brief explanation
+
+Currently, elasticsearch-lua is built on top of Elasticsearch 2.x but does not implement all possible Elasticsearch features. Moreover, Elasticsearch is already in version 5.2 and many new features are available.
+
+This project aims to implement the missing features from 2.x and also add the new features from Elasticsearch 5.2.
+
+#### Expected results
+
+An updated Lua client to access the Elasticsearch REST API compatible with the latest version (currently 5.2).
+
+#### Knowledge prerequisites
+
+* Lua - medium
+* JSON - medium
+* HTTP - medium
+* Elasticsearch - medium
+
+#### Skill level
+
+Medium
+
+#### Mentor
+
+Pablo Musa
+
+## 
 
 ### Other Ideas
 
