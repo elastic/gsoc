@@ -59,6 +59,9 @@ These are suggestions that we think would make good Google Summer of Code projec
 * [Beats: Reimplement Packetbeat sniffers](#beats_packet_sniffers)
 * [Beats: More modules for Metricbeat](#beats_metric_modules)
 * [Elasticsearch Clients: Update elasticsearch-lua](#esclients_update_eslua)
+* [Elasticsearch: Improve Painless's protection against long scripts](#painless_improve_time_limits)
+* [Elasticsearch: Make Painless's compiler easier to understand](#painless_improve_guts)
+* [Elasticsearch: Speed up some highlighting](#highlighting_order)
 
 ##
 
@@ -188,6 +191,42 @@ the analyze phase would make the compiler easier to understand.
 * Java - medium
 * ASM and byte code generation - none required but you'd learn some in the
   process
+* Elasticsearch - none and we'll happily teach the little you'd need to learn
+
+#### Skill level
+
+Medium
+
+#### Mentor
+
+Nik Everett
+
+##
+
+### <a name="highlighting_order"></a>Fix highlighting apis to highlight more than 1 doc at once
+
+#### Brief explanation
+
+One of the things Elasticsearch can do to is "highlight" a snippet from a
+matching document. Currently documents are highlighted one after another during
+the highlighting phase. The trouble with this is that some of the
+implementations of highlighting are more efficient if they highlight in a
+different order.
+
+#### Expected results
+
+* Change to Elasticsearch to allow sending all documents to highlight to the
+  highlighters at a time.
+* Change to built in highlighters to support this and make intelligent
+  decisions about the order. There are four builtin highlighters, two of which
+  will likely see significant benefit from this change.
+* Benchmarking to show the performance improvements this brings.
+
+#### Knowledge prerequisites
+
+* Java - medium
+* Lucene - none and you'll get a good introduction to the project by working on
+  this project
 * Elasticsearch - none and we'll happily teach the little you'd need to learn
 
 #### Skill level
