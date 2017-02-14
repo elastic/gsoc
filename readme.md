@@ -60,7 +60,7 @@ These are suggestions that we think would make good Google Summer of Code projec
 * [Beats: More modules for Metricbeat](#beats_metric_modules)
 * [Elasticsearch Clients: Update elasticsearch-lua](#esclients_update_eslua)
 
-## 
+##
 
 ### <a name="beats_java"></a>Beats: Monitor your Java applications with JavaBeat
 
@@ -72,13 +72,13 @@ While the Elastic Stack heavily relies on Java our monitoring capabilities in th
 * Make it possible to compare sum of memory usages reported by the JVM versus what the operating system reports for the entire process.
 * The Beat should handle JDK8 ad JDK9 for OpenJDK and Oracle JDK on Linux and Windows.
 
-## 
+##
 
 ### <a name="beats_packet_protocol"></a>Beats: Integrate flows with protocol analyzers in Packetbeat
 
 todo
 
-## 
+##
 
 ### <a name="beats_packet_sniffers"></a>Beats: Reimplement Packetbeat sniffers
 
@@ -86,7 +86,7 @@ Today the sniffers are not based on a go-packet.
 
 todo
 
-## 
+##
 
 ### <a name="beats_metric_modules"></a>Beats: More modules for Metricbeat
 
@@ -94,7 +94,7 @@ Today Metricbeat supports Apache HTTP, Couchbase, Docker, HAProxy, Kafka, MongoD
 
 Your application must include, which module or modules you want to add, why you think they should be included, and which metrics you intend to collect.
 
-## 
+##
 
 ### <a name="esclients_update_eslua"></a>Update elasticsearch-lua
 
@@ -123,7 +123,118 @@ Medium
 
 Pablo Musa
 
-## 
+##
+
+### <a name="painless_improve_time_limits"></a>Improve the purpose built embedded language Painless's defense against long scripts
+
+#### Brief explanation
+
+Elasticsearch contains Painless, a purpose built embedded language designed to
+protect the process from malicious or mistaken scripts that run forever in an
+attempt to starve server resources. This protection is does a decent job right
+now but there are places where it is too permissive. We'd love for someone to
+investigate the problem in more depth then we have.
+
+#### Expected results
+
+Both:
+* Either
+  * An improved defense mechanism merged into Painless.
+  * A detailed explanation of why the current defense mechanisms are good
+    enough.
+* An expanded suite of tests for this defense mechanism.
+
+#### Knowledge prerequisites
+
+* Java - medium
+* ASM and byte code generation - none required but you'll learn quite a bit by
+  working on the problem and we'll happily teach you what we know
+* Elasticsearch - none and we'll happily teach the little you'd need to learn
+
+#### Skill level
+
+Medium
+
+#### Mentor
+
+Nik Everett
+
+##
+
+### <a name="painless_improve_guts"></a>Improve the purpose built embedded language Painless's compiler internals
+
+#### Brief explanation
+
+Elasticsearch contains Painless, a purpose built embedded language. The compiler
+is run in four phases (Parse, Walk, Analyze, Code Generation) but has two
+internal representations. The second representation is generated in the Walk
+phase, modified in the Analyze phase and then generates code in the
+Code Generation phase. The modification during the Analyze phase troubles us
+because the bulk of the work when adding new features or debugging issues occurs
+during this phase and the mutability makes the debugging more difficult. We
+hypothesize that adding a second internal representation that is built during
+the analyze phase would make the compiler easier to understand.
+
+#### Expected results
+
+* Code that adds an internal representation between the Analyze and Code
+  Generation phases or some other better solution we haven't thought of at
+  this time.
+* Bonus points for any new language features or improved error reporting that
+  become "easy" as a side effect of this change.
+
+#### Knowledge prerequisites
+
+* Java - medium
+* ASM and byte code generation - none required but you'd learn some in the
+  process
+* Elasticsearch - none and we'll happily teach the little you'd need to learn
+
+#### Skill level
+
+Medium
+
+#### Mentor
+
+Nik Everett
+
+##
+
+### <a name="highlighting_order"></a>Fix highlighting apis to highlight more than 1 doc at once
+
+#### Brief explanation
+
+One of the things Elasticsearch can do to is "highlight" a snippet from a
+matching document. Currently documents are highlighted one after another during
+the highlighting phase. The trouble with this is that some of the
+implementations of highlighting are more efficient if they highlight in a
+different order.
+
+#### Expected results
+
+* Change to Elasticsearch to allow sending all documents to highlight to the
+  highlighters at a time.
+* Change to built in highlighters to support this and make intelligent
+  decisions about the order. There are four builtin highlighters, two of which
+  will likely see significant benefit from this change.
+* Benchmarking to show the performance improvements this brings.
+
+#### Knowledge prerequisites
+
+* Java - medium
+* Lucene - none and you'll get a good introduction to the project by working on
+  this project
+* Elasticsearch - none and we'll happily teach the little you'd need to learn
+
+#### Skill level
+
+Medium
+
+#### Mentor
+
+Nik Everett
+
+##
 
 ### Other Ideas
 
