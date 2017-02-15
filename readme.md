@@ -18,7 +18,7 @@ In your application tell us:
   * [Elasticsearch `low hanging fruit`](https://github.com/elastic/elasticsearch/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
   * [Logstash `log hanging fruit`](https://github.com/elastic/logstash/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
   * [Kibana `low fruit`](https://github.com/elastic/kibana/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+fruit%22)
-  * [Beats](https://github.com/elastic/beats/issues)
+  * [Beats `low hanging fruit`](https://github.com/elastic/beats/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
 
 Elastic is always seeking to diversify its contributors and especially welcomes applications from women from all backgrounds and people of color.
 
