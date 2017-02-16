@@ -5,6 +5,7 @@
 This readme will get you started with project ideas, mentors, and how to apply. Feel free to open an issue to ask questions or discuss other ideas.
 
 
+
 ## Application Instructions
 
 Please read and apply via [https://summerofcode.withgoogle.com/get-started/](https://summerofcode.withgoogle.com/get-started/).
@@ -23,6 +24,7 @@ In your application tell us:
 Elastic is always seeking to diversify its contributors and especially welcomes applications from women from all backgrounds and people of color.
 
 
+
 ## Mentors
 
 * [Igor Motov](https://github.com/imotov)
@@ -34,6 +36,7 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 * [Philipp Krenn](https://github.com/xeraa)
 * [Steffen Siering](https://github.com/urso)
 * More to follow
+
 
 
 ## Technologies Used
@@ -50,22 +53,27 @@ While you do not need to be an expert, you need to be comfortable working with t
 You will need to show off your skills by linking to a pull request you have submitted to your project. The pull request does not need to be huge or complex, but we want to be sure that you can contribute fully.
 
 
+
 ## Ideas
 
 These are suggestions that we think would make good Google Summer of Code projects. Feel free to open an issue if you wish to discuss or propose your own idea.
 
 * [Beats: Monitor your Java applications with JavaBeat](#beats_java)
 * [Beats: Integrate flows with protocol analyzers in Packetbeat](#beats_packet_protocol)
-* [Beats: Reimplement Packetbeat sniffers](#beats_packet_sniffers)
 * [Beats: More modules for Metricbeat](#beats_metric_modules)
+* [Beats: More modules for Filebeat](#beats_file_modules)
 * [Elasticsearch Clients: Update elasticsearch-lua](#esclients_update_eslua)
 * [Elasticsearch: Improve Painless's protection against long scripts](#painless_improve_time_limits)
 * [Elasticsearch: Make Painless's compiler easier to understand](#painless_improve_guts)
 * [Elasticsearch: Speed up some highlighting](#highlighting_order)
 
+
+
 ##
 
 ### <a name="beats_java"></a>Beats: Monitor your Java applications with JavaBeat
+
+#### Brief explanation
 
 While the Elastic Stack heavily relies on Java our monitoring capabilities in that area could use your help:
 
@@ -75,27 +83,131 @@ While the Elastic Stack heavily relies on Java our monitoring capabilities in th
 * Make it possible to compare sum of memory usages reported by the JVM versus what the operating system reports for the entire process.
 * The Beat should handle JDK8 ad JDK9 for OpenJDK and Oracle JDK on Linux and Windows.
 
+#### Expected results
+
+A working beat to extract the metrics on all supported JDKs for Linux and Windows. We have a lot of Java processes running and will use those to continuously test and improve your results. Improving the initial implementation is the explicit goal of this task.
+
+Plus visualizations and a dashboard in Kibana.
+
+#### Knowledge prerequisites
+
+* Go - medium
+* Java internals - none required but you'll learn quite a bit by
+  working on the problem and we'll happily teach you what we know
+* Elasticsearch - none and we'll happily teach the little you'd need to learn
+
+#### Skill level
+
+Medium
+
+#### Mentor
+
+Konrad Beiske, Nicolas Ruflin
+
+
+
 ##
 
-### <a name="beats_packet_protocol"></a>Beats: Integrate flows with protocol analyzers in Packetbeat
+### <a name="beats_packet_protocol"></a>Beats: Packetbeat Protocols
 
-todo
+#### Brief explanation
 
-##
+Packetbeat can be extended with additional protocols. Some of the most requested protocols can be found under [https://github.com/elastic/beats/issues?q=is%3Aopen+label%3A%22new+module%22+label%3APacketbeat](https://github.com/elastic/beats/issues?q=is%3Aopen+label%3A%22new+module%22+label%3APacketbeat). Please provide a list of the protocols you want to add and why you have selected them. Pick a sensible number of protocols and give a rough overview of the features you want to implement.
 
-### <a name="beats_packet_sniffers"></a>Beats: Reimplement Packetbeat sniffers
+#### Expected results
 
-Today the sniffers are not based on a go-packet.
+Modules for the selected applications, documentation, as well as visualizations and a dashboard in Kibana for each protocol.
 
-todo
+#### Knowledge prerequisites
+
+* Go - medium
+* Networking - medium
+* Applications you will support - none required but you'll learn quite a bit by
+  working on the problem and we'll happily teach you what we know
+* Elasticsearch - none and we'll happily teach the little you'd need to learn
+
+#### Skill level
+
+Medium
+
+#### Mentor
+
+Steffen Siering, Nicolas Ruflin
+
 
 ##
 
 ### <a name="beats_metric_modules"></a>Beats: More modules for Metricbeat
 
-Today Metricbeat supports Apache HTTP, Couchbase, Docker, HAProxy, Kafka, MongoDB, MySQL, nginx, PostgreSQL, Prometheus, Redis, and ZooKeeper. But we want more!
+#### Brief explanation
+
+Today Metricbeat supports Apache HTTP, Couchbase, Docker, HAProxy, Kafka, MongoDB, MySQL, nginx, PostgreSQL, Prometheus, Redis, and ZooKeeper. But we want more! Luckily it is fairly easy to add new modules to Metricbeat. The developer guide can be found at [https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-developer-guide.html](https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-developer-guide.html).
+
+Here is a list of services we are still missing the most:
+
+* Cassandra
+* Consul
+* CouchDB
+* Jenkins
+* Kubernetes (complex one)
+* Memcached
+* Mesos
+* RabbitMQ
+* RethingDB
+* Riak
+* Varnish
 
 Your application must include, which module or modules you want to add, why you think they should be included, and which metrics you intend to collect.
+
+#### Expected results
+
+Modules for the selected applications, documentation, as well as visualizations and a dashboard in Kibana for each application.
+
+#### Knowledge prerequisites
+
+* Go - medium
+* Applications you will support - at least a basic understanding so that you know what makes sense to monitor and how do display that information
+* Elasticsearch - none and we'll happily teach the little you'd need to learn
+
+#### Skill level
+
+Medium
+
+#### Mentor
+
+Nicolas Ruflin, Philipp Krenn
+
+
+
+##
+
+### <a name="beats_file_modules"></a>Beats: More modules for Filebeat
+
+#### Brief explanation
+
+Filebeat modules are brand new, but they are vital to provide a good out of the box experience. You can follow the current status at [https://github.com/elastic/beats/tree/master/filebeat/module](https://github.com/elastic/beats/tree/master/filebeat/module). At the moment we plan to support Apache HTTP, MySQL, nginx, and system logs. Good candidates for inclusion are the applications we already support in Metricbeat or the ones we would like to add in [Beats: More modules for Metricbeat](#beats_metric_modules).
+
+Your application must include, which module or modules you want to add, why you think they should be included, and which information you intend to collect.
+
+#### Expected results
+
+Modules for the selected applications, documentation, as well as visualizations and a dashboard in Kibana for each application.
+
+#### Knowledge prerequisites
+
+* Go - medium
+* Applications you will support - at least a basic understanding so that you know what makes sense to collect and how do display that information
+* Elasticsearch - none and we'll happily teach the little you'd need to learn
+
+#### Skill level
+
+Medium
+
+#### Mentor
+
+Nicolas Ruflin, Philipp Krenn
+
+
 
 ##
 
@@ -124,7 +236,9 @@ Medium
 
 #### Mentor
 
-Pablo Musa
+Pablo Musa, Jason Wong
+
+
 
 ##
 
@@ -134,7 +248,7 @@ Pablo Musa
 
 Elasticsearch contains Painless, a purpose built embedded language designed to
 protect the process from malicious or mistaken scripts that run forever in an
-attempt to starve server resources. This protection is does a decent job right
+attempt to starve server resources. This protection does a decent job right
 now but there are places where it is too permissive. We'd love for someone to
 investigate the problem in more depth then we have.
 
@@ -160,7 +274,9 @@ Medium
 
 #### Mentor
 
-Nik Everett
+Nik Everett, Igor Motov
+
+
 
 ##
 
@@ -199,11 +315,13 @@ Medium
 
 #### Mentor
 
-Nik Everett
+Nik Everett, Igor Motov
+
+
 
 ##
 
-### <a name="highlighting_order"></a>Fix highlighting apis to highlight more than 1 doc at once
+### <a name="highlighting_order"></a>Fix highlighting APIs to highlight more than 1 doc at once
 
 #### Brief explanation
 
@@ -235,43 +353,9 @@ Medium
 
 #### Mentor
 
-Nik Everett
+Nik Everett, Igor Motov
 
-##
 
-### <a name="highlighting_order"></a>Fix highlighting apis to highlight more than 1 doc at once
-
-#### Brief explanation
-
-One of the things Elasticsearch can do to is "highlight" a snippet from a
-matching document. Currently documents are highlighted one after another during
-the highlighting phase. The trouble with this is that some of the
-implementations of highlighting are more efficient if they highlight in a
-different order.
-
-#### Expected results
-
-* Change to Elasticsearch to allow sending all documents to highlight to the
-  highlighters at a time.
-* Change to built in highlighters to support this and make intelligent
-  decisions about the order. There are four builtin highlighters, two of which
-  will likely see significant benefit from this change.
-* Benchmarking to show the performance improvements this brings.
-
-#### Knowledge prerequisites
-
-* Java - medium
-* Lucene - none and you'll get a good introduction to the project by working on
-  this project
-* Elasticsearch - none and we'll happily teach the little you'd need to learn
-
-#### Skill level
-
-Medium
-
-#### Mentor
-
-Nik Everett
 
 ##
 
