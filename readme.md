@@ -14,7 +14,7 @@ In your application tell us:
 
 1. Who you are: Your name and how to contact you.
 2. Which project idea you want to work on: Which of our ideas is it or describe in detail if it is your own.
-3. How will you implement it: Provide a detailed work timeline that breaks the project into one or two week milestones and align it to the GSoC timeline.
+3. How will you implement it: Provide a detailed work timeline that breaks the project into one- or two-week milestones and align it to the GSoC timeline.
 4. Why you: Link to a pull request you have submitted to the project (Elasticsearch, Logstash, Kibana, or Beats) you want to work on. Here is a starting point for issues you could dive into:
   * [Elasticsearch `low hanging fruit`](https://github.com/elastic/elasticsearch/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
   * [Logstash `log hanging fruit`](https://github.com/elastic/logstash/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
@@ -325,7 +325,7 @@ Nik Everett, Igor Motov
 
 #### Brief explanation
 
-One of the things Elasticsearch can do to is "highlight" a snippet from a
+One of the things Elasticsearch can do is to "highlight" a snippet from a
 matching document. Currently documents are highlighted one after another during
 the highlighting phase. The trouble with this is that some of the
 implementations of highlighting are more efficient if they highlight in a
