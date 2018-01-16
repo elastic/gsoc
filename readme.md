@@ -62,10 +62,10 @@ These are suggestions that we think would make good Google Summer of Code projec
 * [Beats: Integrate flows with protocol analyzers in Packetbeat](#beats_packet_protocol)
 * [Beats: More modules for Metricbeat](#beats_metric_modules)
 * [Beats: More modules for Filebeat](#beats_file_modules)
-* [Elasticsearch Clients: Update elasticsearch-lua](#esclients_update_eslua)
-* [Elasticsearch: Improve Painless's protection against long scripts](#painless_improve_time_limits)
-* [Elasticsearch: Make Painless's compiler easier to understand](#painless_improve_guts)
-* [Elasticsearch: Speed up some highlighting](#highlighting_order)
+* [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
+* [Elasticsearch: Improve Painless's protection against long scripts](#elasticsearch_painless_limits)
+* [Elasticsearch: Make Painless's compiler easier to understand](#elasticsearch_painless_compiler)
+* [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
 
 
 
@@ -207,17 +207,17 @@ Nicolas Ruflin, Philipp Krenn
 
 ##
 
-### <a name="esclients_update_eslua"></a>Update elasticsearch-lua
+### <a name="elasticsearch_client_lua"></a>Update elasticsearch-lua
 
 #### Brief explanation
 
-Currently, elasticsearch-lua is built on top of Elasticsearch 2.x but does not implement all possible Elasticsearch features. Moreover, Elasticsearch is already in version 5.2 and many new features are available.
+Currently, elasticsearch-lua is built on top of Elasticsearch 2.x but does not implement all possible Elasticsearch features. Moreover, Elasticsearch is already at version 6.1 and many new features are available.
 
-This project aims to implement the missing features from 2.x and also add the new features from Elasticsearch 5.2.
+This project aims to implement the missing features from 2.x and also add the new features from Elasticsearch 5.x and 6.x.
 
 #### Expected results
 
-An updated Lua client to access the Elasticsearch REST API compatible with the latest version (currently 5.2).
+An updated Lua client to access the Elasticsearch REST API compatible with the latest version (currently 6.1).
 
 #### Knowledge prerequisites
 
@@ -238,7 +238,7 @@ Pablo Musa, Jason Wong
 
 ##
 
-### <a name="painless_improve_time_limits"></a>Improve the purpose built embedded language Painless's defense against long scripts
+### <a name="elasticsearch_painless_limits"></a>Elasticsearch: Improve Painless's protection against long scripts
 
 #### Brief explanation
 
@@ -276,7 +276,7 @@ Nik Everett, Igor Motov
 
 ##
 
-### <a name="painless_improve_guts"></a>Improve the purpose built embedded language Painless's compiler internals
+### <a name="elasticsearch_painless_compiler"></a>Elasticsearch: Make Painless's compiler easier to understand
 
 #### Brief explanation
 
@@ -317,7 +317,7 @@ Nik Everett, Igor Motov
 
 ##
 
-### <a name="highlighting_order"></a>Fix highlighting APIs to highlight more than 1 doc at once
+### <a name="elasticsearch_highlighting_order"></a>Elasticsearch: Speed up some highlighting
 
 #### Brief explanation
 
