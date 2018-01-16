@@ -1,6 +1,6 @@
 # Elastic's Google Summer of Code
 
-[Elastic](https://www.elastic.co) is excited to participate in the Google Summer of Code 2017 program and we hope that you are too!
+[Elastic](https://www.elastic.co) is excited to participate in the Google Summer of Code 2018 program and we hope that you are too!
 
 This readme will get you started with project ideas, mentors, and how to apply. Feel free to open an issue to ask questions or discuss other ideas.
 
@@ -18,8 +18,8 @@ In your application tell us:
 4. Why you: Link to a pull request you have submitted to the project (Elasticsearch, Logstash, Kibana, or Beats) you want to work on. Here is a starting point for issues you could dive into:
   * [Elasticsearch `low hanging fruit`](https://github.com/elastic/elasticsearch/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
   * [Logstash `log hanging fruit`](https://github.com/elastic/logstash/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
-  * [Kibana `low fruit`](https://github.com/elastic/kibana/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+fruit%22)
-  * [Beats `low hanging fruit`](https://github.com/elastic/beats/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
+  * [Kibana `low hanging fruit`](https://github.com/elastic/kibana/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
+  * [Beats `good first issue`](https://github.com/elastic/beats/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
 
 Elastic is always seeking to diversify its contributors and especially welcomes applications from women from all backgrounds and people of color.
 
@@ -149,12 +149,8 @@ Here is a list of services we are still missing the most:
 * Consul
 * CouchDB
 * Jenkins
-* Kubernetes (complex one)
-* Memcached
 * Mesos
 * RabbitMQ
-* RethingDB
-* Riak
 * Varnish
 
 Your application must include, which module or modules you want to add, why you think they should be included, and which metrics you intend to collect.
@@ -365,7 +361,7 @@ You may also get inspiration from our issues:
 
 * [Elasticsearch `high hanging fruit`](https://github.com/elastic/elasticsearch/issues?q=is%3Aopen+is%3Aissue+label%3A%22high+hanging+fruit%22).
 * [Logstash `high hanging fruit`](https://github.com/elastic/logstash/issues?q=is%3Aopen+is%3Aissue+label%3A%22high+hanging+fruit%22)
-* [Kibana `high fruit`](https://github.com/elastic/kibana/issues?q=is%3Aopen+is%3Aissue+label%3A%22high+fruit%22)
+* [Kibana `high hanging fruit`](https://github.com/elastic/kibana/issues?q=is%3Aopen+is%3Aissue+label%3A%22high+hanging+fruit%22)
 * [Beats](https://github.com/elastic/beats/issues)
 
 Please discuss any of these with us before submitting to maximize your changes of being accepted.
