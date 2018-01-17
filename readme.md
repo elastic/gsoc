@@ -29,10 +29,8 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 
 * [Igor Motov](https://github.com/imotov)
 * [Jason Wong](https://github.com/logmonster)
-* [Konrad Beiske](https://github.com/beiske)
 * [Nicolas Ruflin](https://github.com/ruflin)
 * [Nik Everett](https://github.com/nik9000)
-* [Pablo Musa](https://github.com/pmusa)
 * [Philipp Krenn](https://github.com/xeraa)
 * [Steffen Siering](https://github.com/urso)
 * More to follow
@@ -102,7 +100,7 @@ Medium
 
 #### Mentor
 
-Konrad Beiske, Nicolas Ruflin
+Nicolas Ruflin
 
 
 
@@ -232,8 +230,7 @@ Medium
 
 #### Mentor
 
-Pablo Musa, Jason Wong
-
+Jason Wong
 
 
 ##
