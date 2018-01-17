@@ -56,15 +56,15 @@ You will need to show off your skills by linking to a pull request you have subm
 
 These are suggestions that we think would make good Google Summer of Code projects. Feel free to open an issue if you wish to discuss or propose your own idea.
 
-* [Beats: Monitor your Java applications with JavaBeat](#beats_java)
-* [Beats: Integrate flows with protocol analyzers in Packetbeat](#beats_packet_protocol)
-* [Beats: More modules for Metricbeat](#beats_metric_modules)
-* [Beats: More modules for Filebeat](#beats_file_modules)
-* [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
-* [Elasticsearch: Improve Painless's protection against long scripts](#elasticsearch_painless_limits)
-* [Elasticsearch: Make Painless's compiler easier to understand](#elasticsearch_painless_compiler)
-* [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
 
+* TODO [Beats: Monitor your Java applications with JavaBeat](#beats_java)
+* TODO [Beats: Integrate flows with protocol analyzers in Packetbeat](#beats_packet_protocol)
+* TODO [Beats: More modules for Metricbeat](#beats_metric_modules)
+* TODO [Beats: More modules for Filebeat](#beats_file_modules)
+* TODO [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
+* TODO [Elasticsearch: Improve Painless's protection against long scripts](#elasticsearch_painless_limits)
+* TODO [Elasticsearch: Make Painless's compiler easier to understand](#elasticsearch_painless_compiler)
+* TODO [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
 
 
 ##
