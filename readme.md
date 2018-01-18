@@ -27,6 +27,7 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 
 ## Mentors
 
+* [Archana Sriram](https://github.com/archanid)
 * [Aravind Putrevu](https://github.com/aravindputrevu)
 * [Igor Motov](https://github.com/imotov)
 * [Jason Wong](https://github.com/logmonster)
