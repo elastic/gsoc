@@ -60,14 +60,15 @@ If you cannot find a suitable issue, get stuck on one, need help with your setup
 
 These are suggestions that we think would make good Google Summer of Code projects:
 
-* TODO [Beats: Monitor your Java applications with JavaBeat](#beats_java)
-* TODO [Beats: Integrate flows with protocol analyzers in Packetbeat](#beats_packet_protocol)
-* TODO [Beats: More modules for Metricbeat](#beats_metric_modules)
-* TODO [Beats: More modules for Filebeat](#beats_file_modules)
-* TODO [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
-* TODO [Elasticsearch: Improve Painless's protection against long scripts](#elasticsearch_painless_limits)
-* TODO [Elasticsearch: Make Painless's compiler easier to understand](#elasticsearch_painless_compiler)
-* TODO [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
+* [Beats: Monitor your Java applications with JavaBeat](#beats_java)
+* [Beats: Integrate flows with protocol analyzers in Packetbeat](#beats_packet_protocol)
+* [Beats: More modules for Metricbeat](#beats_metric_modules)
+* [Beats: More modules for Filebeat](#beats_file_modules)
+* [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
+* [Elasticsearch: Improve Painless's protection against long scripts](#elasticsearch_painless_limits)
+* [Elasticsearch: Make Painless's compiler easier to understand](#elasticsearch_painless_compiler)
+* [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
+* [Ansible Role: Support for 6.x](#ansible)
 
 Please [open an issue](https://github.com/elastic/gsoc/issues) if you wish to discuss or propose your own idea — there are also some [pointers for other ideas](#other). We definitely value your initiative, so don't be shy.
 
@@ -103,7 +104,7 @@ Medium
 
 #### Mentor
 
-Nicolas Ruflin
+Nicolas Ruflin, Aravind Putrevu
 
 
 
@@ -111,7 +112,7 @@ Nicolas Ruflin
 
 #### Brief Explanation
 
-Packetbeat can be extended with additional protocols. Some of the most requested protocols can be found under [https://github.com/elastic/beats/issues?q=is%3Aopen+label%3APacketbeat+label%3Amodule](https://github.com/elastic/beats/issues?q=is%3Aopen+label%3APacketbeat+label%3Amodule). Please provide a list of the protocols you want to add and why you have selected them. Pick a sensible number of protocols and give a rough overview of the features you want to implement.
+Packetbeat can be extended with additional protocols and there is a list with some of the [most requested protocols](https://github.com/elastic/beats/issues?q=is%3Aopen+label%3APacketbeat+label%3Amodule). Please provide a list of the protocols you want to add and why you have selected them. Pick a sensible number of protocols and give a rough overview of the features you want to implement.
 
 #### Expected Results
 
@@ -139,7 +140,7 @@ Steffen Siering, Nicolas Ruflin
 
 #### Brief Explanation
 
-Today Metricbeat supports around 30 modules like Apache HTTP, Couchbase, Docker, HAProxy, Kafka, Kubernetes, MongoDB, MySQL, nginx, PostgreSQL, Prometheus, Redis, and ZooKeeper. But we want more! Luckily it is fairly easy to add new modules to Metricbeat. The developer guide can be found at [https://www.elastic.co/guide/en/beats/devguide/current/creating-metricbeat-module.html](https://www.elastic.co/guide/en/beats/devguide/current/creating-metricbeat-module.html).
+Today Metricbeat supports around 30 modules like Apache HTTP, Couchbase, Docker, HAProxy, Kafka, Kubernetes, MongoDB, MySQL, nginx, PostgreSQL, Prometheus, Redis, and ZooKeeper. But we want more! Luckily it is fairly easy to add new modules to Metricbeat. The [developer guide](https://www.elastic.co/guide/en/beats/devguide/current/creating-metricbeat-module.html) can be found in the Beats documentation.
 
 Here is a list of services we are still missing the most:
 
@@ -225,7 +226,7 @@ Medium
 
 #### Mentor
 
-Jason Wong
+Jason Wong, Aravind Putrevu
 
 
 
@@ -340,6 +341,35 @@ Nik Everett, Igor Motov
 
 
 
+### <a name="ansible"></a>Ansible Role: Support for 6.x
+
+#### Brief Explanation
+
+The [Ansible playbook for Elasticsearch](https://github.com/elastic/ansible-elasticsearch) enjoys good usage from the community, but it is one of the areas where we are struggling to keep up with user demands and changes in Elasticsearch.
+The goal of this project is to help the project back on track (by supporting the current Elasticsearch version) and exploring options to test against any future release. Thus making the maintenance of this role less of a manual task.
+
+#### Expected Results
+
+* Support for all new features in Elasticsearch 6.x on the supported platforms Ubuntu, Debian, and Centos.
+* Maintaining or even improving the current level of test coverage, to keep the project on a healthy track for future iterations.
+* Explore mechanisms to track upstream changes in an automated fashion, so that if a new minor version of Elasticsearch is being released, this role will be tested against it automatically.
+
+#### Knowledge Prerequisites
+
+* Ansible - medium
+* Ruby - basic understanding will be helpful, since we are testing the role with Ruby
+* Elasticsearch - none and we'll happily teach the little you'd need to learn
+
+#### Skill Level
+
+Medium
+
+#### Mentors
+
+Philipp Krenn, Aravind Putrevu
+
+
+
 ### <a name="other"></a>Other Ideas
 
 You may get some inspiration from our issues:
@@ -348,6 +378,7 @@ You may get some inspiration from our issues:
 * [Logstash `high hanging fruit`](https://github.com/elastic/logstash/issues?q=is%3Aopen+is%3Aissue+label%3A%22high+hanging+fruit%22)
 * [Kibana `high hanging fruit`](https://github.com/elastic/kibana/issues?q=is%3Aopen+is%3Aissue+label%3A%22high+hanging+fruit%22)
 * [Beats](https://github.com/elastic/beats/issues)
+* Any other open source project in the [Elastic organization on GitHub](https://github.com/elastic)
 
 Please discuss any of these in an [issue](https://github.com/elastic/gsoc/issues) with us before submitting to maximize your chances of being accepted.
 
