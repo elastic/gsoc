@@ -25,7 +25,7 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 
 
 
-## Mentors
+## Team
 
 * [Andy James](https://github.com/andymjames) mentor
 * [Archana Sriram](https://github.com/archanid) mentor
