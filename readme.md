@@ -10,7 +10,7 @@ This readme will get you started with project ideas, mentors, where to ask quest
 
 Please read and apply via [https://summerofcode.withgoogle.com/get-started/](https://summerofcode.withgoogle.com/get-started/).
 
-In your application tell us:
+In your application please tell us:
 
 1. Who you are: Your name and how to contact you.
 2. Which project idea you want to work on: Which of our ideas is it or describe in detail if it is your own.
@@ -27,15 +27,18 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 
 ## Mentors
 
-* [Archana Sriram](https://github.com/archanid)
-* [Aravind Putrevu](https://github.com/aravindputrevu)
-* [Igor Motov](https://github.com/imotov)
-* [Jason Wong](https://github.com/logmonster)
-* [Nicolas Ruflin](https://github.com/ruflin)
-* [Nik Everett](https://github.com/nik9000)
-* [Philipp Krenn](https://github.com/xeraa)
-* [Steffen Siering](https://github.com/urso)
-* More to follow
+* [Andy James](https://github.com/andymjames) mentor
+* [Archana Sriram](https://github.com/archanid) mentor
+* [Aravind Putrevu](https://github.com/aravindputrevu) mentor
+* [Carlos Pérez-Aradros](https://github.com/exekias) mentor
+* [Elyssa Emrich](https://github.com/eemrich) admin
+* [Igor Motov](https://github.com/imotov) mentor
+* [Jason Wong](https://github.com/logmonster) mentor
+* [Nicolas Ruflin](https://github.com/ruflin) mentor
+* [Nik Everett](https://github.com/nik9000) mentor
+* [Philipp Krenn](https://github.com/xeraa) admin & mentor
+* [Steffen Siering](https://github.com/urso) mentor
+* [Tyler Hannan](https://github.com/tylerhannan) admin
 
 
 
@@ -68,7 +71,6 @@ These are suggestions that we think would make good Google Summer of Code projec
 * [Elasticsearch: Improve Painless's protection against long scripts](#elasticsearch_painless_limits)
 * [Elasticsearch: Make Painless's compiler easier to understand](#elasticsearch_painless_compiler)
 * [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
-* [Ansible Role: Support for 6.x](#ansible)
 
 Please [open an issue](https://github.com/elastic/gsoc/issues) if you wish to discuss or propose your own idea — there are also some [pointers for other ideas](#other). We definitely value your initiative, so don't be shy.
 
@@ -104,7 +106,7 @@ Medium
 
 #### Mentor
 
-Nicolas Ruflin, Aravind Putrevu
+Nicolas Ruflin, Carlos Pérez-Aradros
 
 
 
@@ -169,7 +171,7 @@ Medium
 
 #### Mentors
 
-Nicolas Ruflin, Philipp Krenn
+Nicolas Ruflin, Carlos Pérez-Aradros
 
 
 
@@ -341,35 +343,6 @@ Nik Everett, Igor Motov
 
 
 
-### <a name="ansible"></a>Ansible Role: Support for 6.x
-
-#### Brief Explanation
-
-The [Ansible playbook for Elasticsearch](https://github.com/elastic/ansible-elasticsearch) enjoys good usage from the community, but it is one of the areas where we are struggling to keep up with user demands and changes in Elasticsearch.
-The goal of this project is to help the project back on track (by supporting the current Elasticsearch version) and exploring options to test against any future release. Thus making the maintenance of this role less of a manual task.
-
-#### Expected Results
-
-* Support for all new features in Elasticsearch 6.x on the supported platforms Ubuntu, Debian, and Centos.
-* Maintaining or even improving the current level of test coverage, to keep the project on a healthy track for future iterations.
-* Explore mechanisms to track upstream changes in an automated fashion, so that if a new minor version of Elasticsearch is being released, this role will be tested against it automatically.
-
-#### Knowledge Prerequisites
-
-* Ansible - medium
-* Ruby - basic understanding will be helpful, since we are testing the role with Ruby
-* Elasticsearch - none and we'll happily teach the little you'd need to learn
-
-#### Skill Level
-
-Medium
-
-#### Mentors
-
-Philipp Krenn, Aravind Putrevu
-
-
-
 ### <a name="other"></a>Other Ideas
 
 You may get some inspiration from our issues:
@@ -378,7 +351,7 @@ You may get some inspiration from our issues:
 * [Logstash `high hanging fruit`](https://github.com/elastic/logstash/issues?q=is%3Aopen+is%3Aissue+label%3A%22high+hanging+fruit%22)
 * [Kibana `high hanging fruit`](https://github.com/elastic/kibana/issues?q=is%3Aopen+is%3Aissue+label%3A%22high+hanging+fruit%22)
 * [Beats](https://github.com/elastic/beats/issues)
-* Any other open source project in the [Elastic organization on GitHub](https://github.com/elastic)
+* Any other open source project in the [Elastic organization on GitHub](https://github.com/elastic), for example [Ansible playbook for Elasticsearch](https://github.com/elastic/ansible-elasticsearch)
 
 Please discuss any of these in an [issue](https://github.com/elastic/gsoc/issues) with us before submitting to maximize your chances of being accepted.
 
