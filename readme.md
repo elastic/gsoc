@@ -31,6 +31,7 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 * [Archana Sriram](https://github.com/archanid) mentor
 * [Aravind Putrevu](https://github.com/aravindputrevu) mentor
 * [Carlos Pérez-Aradros](https://github.com/exekias) mentor
+* [Daniel Schneiter](https://github.com/dschneiter) mentor
 * [Elyssa Emrich](https://github.com/eemrich) admin
 * [Igor Motov](https://github.com/imotov) mentor
 * [Jason Wong](https://github.com/logmonster) mentor
@@ -71,6 +72,7 @@ These are suggestions that we think would make good Google Summer of Code projec
 * [Elasticsearch: Improve Painless's protection against long scripts](#elasticsearch_painless_limits)
 * [Elasticsearch: Make Painless's compiler easier to understand](#elasticsearch_painless_compiler)
 * [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
+* [Kibana: Calendar Visualization and Filtering](#kibana_calendar_visualization)
 
 Please [open an issue](https://github.com/elastic/gsoc/issues) if you wish to discuss or propose your own idea — there are also some [pointers for other ideas](#other). We definitely value your initiative, so don't be shy.
 
@@ -96,9 +98,9 @@ Plus visualizations and a dashboard in Kibana.
 #### Knowledge Prerequisites
 
 * Go - medium
-* Java internals - none required but you'll learn quite a bit by
-  working on the problem and we'll happily teach you what we know
-* Elasticsearch - none and we'll happily teach the little you'd need to learn
+* Java internals - none required but you will learn quite a bit by
+  working on the problem and we will happily teach you what we know
+* Elasticsearch - none and we will happily teach the little you would need to learn
 
 #### Skill Level
 
@@ -124,9 +126,9 @@ Modules for the selected applications, documentation, as well as visualizations 
 
 * Go - medium
 * Networking - medium
-* Applications you will support - none required but you'll learn quite a bit by
-  working on the problem and we'll happily teach you what we know
-* Elasticsearch - none and we'll happily teach the little you'd need to learn
+* Applications you will support - none required but you will learn quite a bit by
+  working on the problem and we will happily teach you what we know
+* Elasticsearch - none and we will happily teach the little you would need to learn
 
 #### Skill Level
 
@@ -163,7 +165,7 @@ Modules for the selected applications, documentation, as well as visualizations 
 
 * Go - medium
 * Applications you will support - at least a basic understanding so that you know what makes sense to monitor and how do display that information
-* Elasticsearch - none and we'll happily teach the little you'd need to learn
+* Elasticsearch - none and we will happily teach the little you would need to learn
 
 #### Skill Level
 
@@ -191,7 +193,7 @@ Modules for the selected applications, documentation, as well as visualizations 
 
 * Go - medium
 * Applications you will support - at least a basic understanding so that you know what makes sense to collect and how do display that information
-* Elasticsearch - none and we'll happily teach the little you'd need to learn
+* Elasticsearch - none and we will happily teach the little you would need to learn
 
 #### Skill Level
 
@@ -239,7 +241,7 @@ Jason Wong, Aravind Putrevu
 Elasticsearch contains Painless, a purpose built embedded language designed to
 protect the process from malicious or mistaken scripts that run forever in an
 attempt to starve server resources. This protection does a decent job right
-now but there are places where it is too permissive. We'd love for someone to
+now but there are places where it is too permissive. We would love for someone to
 investigate the problem in more depth then we have.
 
 #### Expected Results
@@ -254,9 +256,9 @@ Both:
 #### Knowledge Prerequisites
 
 * Java - medium
-* ASM and byte code generation - none required but you'll learn quite a bit by
-  working on the problem and we'll happily teach you what we know
-* Elasticsearch - none and we'll happily teach the little you'd need to learn
+* ASM and byte code generation - none required but you will learn quite a bit by
+  working on the problem and we will happily teach you what we know
+* Elasticsearch - none and we will happily teach the little you would need to learn
 
 #### Skill Level
 
@@ -293,9 +295,9 @@ the analyze phase would make the compiler easier to understand.
 #### Knowledge Prerequisites
 
 * Java - medium
-* ASM and byte code generation - none required but you'd learn some in the
+* ASM and byte code generation - none required but you would learn some in the
   process
-* Elasticsearch - none and we'll happily teach the little you'd need to learn
+* Elasticsearch - none and we will happily teach the little you would need to learn
 
 #### Skill Level
 
@@ -329,9 +331,9 @@ different order.
 #### Knowledge Prerequisites
 
 * Java - medium
-* Lucene - none and you'll get a good introduction to the project by working on
+* Lucene - none and you will get a good introduction to the project by working on
   this project
-* Elasticsearch - none and we'll happily teach the little you'd need to learn
+* Elasticsearch - none and we will happily teach the little you would need to learn
 
 #### Skill Level
 
@@ -340,6 +342,36 @@ Medium
 #### Mentors
 
 Nik Everett, Igor Motov
+
+
+
+### <a name="kibana_calendar_visualization"></a>Kibana: Calendar Visualization and Filtering
+
+#### Brief Explanation
+
+At the moment we are missing good calendar componentshis project should add a specialized form of a heatmap rendering the calendar month view with options regarding the first day of the week and text/links displayed in the tiles. Additionally, it should be possible to apply colors depending on some criteria.
+
+#### Expected Results
+
+* A calendar component in Kibana for single visualizations, but it must also play well with dashboards
+* Filtering: Slice and dice data by region, a tag, an attribute,...
+* Besides the naive implementation this will need a lot of testing for unexpected scenarios, like a lot of data, a lot of events on just a few days
+
+#### Knowledge Prerequisites
+
+* Node.js - medium
+* React - medium
+* Kibana - some experience is helpful, but not strictly required and you can also
+  learn as we get started with the project
+* Elasticsearch - none and we will happily teach the little you would need to learn
+
+#### Skill Level
+
+Simple
+
+#### Mentors
+
+Archana Sriram, Daniel Schneiter
 
 
 
