@@ -349,7 +349,7 @@ Nik Everett, Igor Motov
 
 #### Brief Explanation
 
-At the moment we are missing good calendar componentshis project should add a specialized form of a heatmap rendering the calendar month view with options regarding the first day of the week and text/links displayed in the tiles. Additionally, it should be possible to apply colors depending on some criteria.
+At the moment we are missing good calendar components. This project should add a specialized form of a heatmap rendering the calendar month view with options regarding the first day of the week and text/links displayed in the tiles. Additionally, it should be possible to apply colors depending on some criteria.
 
 #### Expected Results
 
