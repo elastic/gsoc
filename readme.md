@@ -37,6 +37,7 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 * [Jason Wong](https://github.com/logmonster) mentor
 * [Nicolas Ruflin](https://github.com/ruflin) mentor
 * [Nik Everett](https://github.com/nik9000) mentor
+* [Pablo Musa](https://github.com/pmusa) mentor
 * [Philipp Krenn](https://github.com/xeraa) admin & mentor
 * [Steffen Siering](https://github.com/urso) mentor
 * [Tyler Hannan](https://github.com/tylerhannan) admin
@@ -201,7 +202,7 @@ Medium
 
 #### Mentors
 
-Nicolas Ruflin, Philipp Krenn
+Nicolas Ruflin, Aravind Putrevu
 
 
 
@@ -230,7 +231,7 @@ Medium
 
 #### Mentor
 
-Jason Wong, Aravind Putrevu
+Pablo Musa, Jason Wong
 
 
 
