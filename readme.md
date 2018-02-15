@@ -56,7 +56,7 @@ While you do not need to be an expert, you need to be comfortable working with t
 
 You will need to show off your skills by linking to a pull request you have submitted to your project. The pull request does not need to be big or complex, but we want to be sure that you can hit the ground running and we won't be spending the first two weeks with tooling issues.
 
-If you cannot find a suitable issue, get stuck on one, need help with your setup, or anything else where you are unsure how to proceed: We have created a [GSoC Discuss group](https://discuss.elastic.co/c/elastic-user-groups/elastic-gsoc) just for that and we will actively monitor any open questions there. [Discuss](https://discuss.elastic.co) is generally the best place for questions around all our open source projects, so we can get started with that workflow right away.
+If you cannot find a suitable issue, get stuck on one, need help with your setup, or anything else where you are unsure how to proceed: We have created a [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community/elastic-gsoc) just for that and we will actively monitor any open questions there. [Discuss](https://discuss.elastic.co) is generally the best place for questions around all our open source projects, so we can get started with that workflow right away.
 
 
 
