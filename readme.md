@@ -70,8 +70,6 @@ These are suggestions that we think would make good Google Summer of Code projec
 * [Beats: More modules for Metricbeat](#beats_metric_modules)
 * [Beats: More modules for Filebeat](#beats_file_modules)
 * [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
-* [Elasticsearch: Improve Painless's protection against long scripts](#elasticsearch_painless_limits)
-* [Elasticsearch: Make Painless's compiler easier to understand](#elasticsearch_painless_compiler)
 * [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
 * [Kibana: Calendar Visualization and Filtering](#kibana_calendar_visualization)
 
@@ -232,81 +230,6 @@ Medium
 #### Mentor
 
 Pablo Musa, Jason Wong
-
-
-
-### <a name="elasticsearch_painless_limits"></a>Elasticsearch: Improve Painless's Protection Against Long Scripts
-
-#### Brief Explanation
-
-Elasticsearch contains Painless, a purpose built embedded language designed to
-protect the process from malicious or mistaken scripts that run forever in an
-attempt to starve server resources. This protection does a decent job right
-now but there are places where it is too permissive. We would love for someone to
-investigate the problem in more depth then we have.
-
-#### Expected Results
-
-Both:
-* Either
-  * An improved defense mechanism merged into Painless.
-  * A detailed explanation of why the current defense mechanisms are good
-    enough.
-* An expanded suite of tests for this defense mechanism.
-
-#### Knowledge Prerequisites
-
-* Java - medium
-* ASM and byte code generation - none required but you will learn quite a bit by
-  working on the problem and we will happily teach you what we know
-* Elasticsearch - none and we will happily teach the little you would need to learn
-
-#### Skill Level
-
-Medium
-
-#### Mentors
-
-Nik Everett, Igor Motov
-
-
-
-### <a name="elasticsearch_painless_compiler"></a>Elasticsearch: Make Painless's Compiler Easier to Understand
-
-#### Brief Explanation
-
-Elasticsearch contains Painless, a purpose built embedded language. The compiler
-is run in four phases (Parse, Walk, Analyze, Code Generation) but has two
-internal representations. The second representation is generated in the Walk
-phase, modified in the Analyze phase and then generates code in the
-Code Generation phase. The modification during the Analyze phase troubles us
-because the bulk of the work when adding new features or debugging issues occurs
-during this phase and the mutability makes the debugging more difficult. We
-hypothesize that adding a second internal representation that is built during
-the analyze phase would make the compiler easier to understand.
-
-#### Expected Results
-
-* Code that adds an internal representation between the Analyze and Code
-  Generation phases or some other better solution we haven't thought of at
-  this time.
-* Bonus points for any new language features or improved error reporting that
-  become "easy" as a side effect of this change.
-
-#### Knowledge Prerequisites
-
-* Java - medium
-* ASM and byte code generation - none required but you would learn some in the
-  process
-* Elasticsearch - none and we will happily teach the little you would need to learn
-
-#### Skill Level
-
-Medium
-
-#### Mentors
-
-Nik Everett, Igor Motov
 
 
 
