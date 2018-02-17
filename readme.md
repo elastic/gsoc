@@ -317,4 +317,4 @@ Please discuss any of these in an [issue](https://github.com/elastic/gsoc/issues
 
 If you want to discuss a specific project idea, use the [issues](https://github.com/elastic/gsoc/issues).
 
-For all other questions like the application process, your pull request,... head over to [Discuss](https://discuss.elastic.co/c/elastic-user-groups/elastic-gsoc).
+For all other questions like the application process, your pull request,... head over to [Discuss](https://discuss.elastic.co/c/elastic-community/elastic-gsoc).
