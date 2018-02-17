@@ -15,7 +15,8 @@ In your application please tell us:
 1. Who you are: Your name and how to contact you.
 2. Which project idea you want to work on: Which of our ideas is it or describe in detail if it is your own.
 3. How you will implement it: Provide a detailed work timeline that breaks the project into one week milestones and align it to the GSoC timeline.
-4. Why you: Link to a pull request you have submitted to the project you want to work on. Here is a starting point for issues you could dive into:
+4. Why you: Link to a pull request you have submitted to the project you want to work on. It is not required to have it merged, since reviewing can take time and we do not rush that process. We just want to see that you can contribute in a meaningful way to the project you want to be working on.
+  Here is a starting point for issues you could dive into:
   * [Elasticsearch `low hanging fruit`](https://github.com/elastic/elasticsearch/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
   * [Logstash `log hanging fruit`](https://github.com/elastic/logstash/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
   * [Kibana `low hanging fruit`](https://github.com/elastic/kibana/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
