@@ -33,6 +33,7 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 * [Aravind Putrevu](https://github.com/aravindputrevu) mentor
 * [Carlos Pérez-Aradros](https://github.com/exekias) mentor
 * [Daniel Schneiter](https://github.com/dschneiter) mentor
+* [Dhaval Kapil](https://github.com/DhavalKapil) mentor
 * [Elyssa Emrich](https://github.com/eemrich) admin
 * [Igor Motov](https://github.com/imotov) mentor
 * [Jason Wong](https://github.com/logmonster) mentor
@@ -230,7 +231,7 @@ Medium
 
 #### Mentor
 
-Pablo Musa, Jason Wong
+Pablo Musa, Dhaval Kapil
 
 
 
