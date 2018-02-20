@@ -210,7 +210,7 @@ Nicolas Ruflin, Aravind Putrevu
 
 #### Brief Explanation
 
-Currently, elasticsearch-lua is built on top of Elasticsearch 2.x but does not implement all possible Elasticsearch features. Moreover, Elasticsearch is already at version 6.1 and many new features are available.
+Currently, [elasticsearch-lua](https://github.com/DhavalKapil/elasticsearch-lua) is built on top of Elasticsearch 2.x but does not implement all possible Elasticsearch features. Moreover, Elasticsearch is already at version 6.x and many new features are available.
 
 This project aims to implement the missing features from 2.x and also add the new features from Elasticsearch 5.x and 6.x.
 
