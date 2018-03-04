@@ -43,6 +43,8 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 * [Philipp Krenn](https://github.com/xeraa) admin & mentor
 * [Ry Biesemeyer](https://github.com/yaauie) mentor
 * [Steffen Siering](https://github.com/urso) mentor
+* [Thomas Neirynck](https://github.com/thomasneirynck) mentor
+* [Tim Roes](https://github.com/timroes) mentor
 * [Tyler Hannan](https://github.com/tylerhannan) admin
 
 
@@ -299,7 +301,9 @@ Simple
 
 #### Mentors
 
-Archana Sriram, Daniel Schneiter
+Tim Roes, Thomas Neirynck, Daniel Schneiter
+
+
 
 ### <a name="logstash_java_plugin_api"></a>Logstash: Java Plugin API
 
@@ -307,7 +311,7 @@ Archana Sriram, Daniel Schneiter
 
 Logstash began its life as a pure-ruby application, providing a ruby-based plugin API that enabled our users to extend Logstash functionality by providing their own configurable inputs, codecs, filters, and outputs with terse and expressive ruby code; in the years since, we have worked with our community to build and maintain [hundreds of plugins](https://github.com/logstash-plugins/) to handle an extremely diverse variety of data flows.
 
-The application now runs in jruby on the JVM with a substantial portion of infrastructure written in pure Java, enabling type-safety and allowing us to leverage many concurrency tools available within the Java Standard Library and JVM ecosystem; we're in the process of defining a Java Plugin API, which will stand alongside the ruby-based plugin API to provide these same benefits for those who would prefer to develop their plugins in Java. 
+The application now runs in jruby on the JVM with a substantial portion of infrastructure written in pure Java, enabling type-safety and allowing us to leverage many concurrency tools available within the Java Standard Library and JVM ecosystem; we're in the process of defining a Java Plugin API, which will stand alongside the ruby-based plugin API to provide these same benefits for those who would prefer to develop their plugins in Java.
 
 Since the best way to validate an API design is to use it extensively, this project will aim to port a number of existing, highly-used plugins to the new Java API; the lessons learned will apply the necessary pressure to help shape the Java Plugin API into a useful form.
 
@@ -327,7 +331,9 @@ Moderate
 
 #### Mentors
 
-Ry Biesemeyer
+Ry Biesemeyer, Jason Wong
+
+
 
 ### <a name="other"></a>Other Ideas
 
