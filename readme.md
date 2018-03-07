@@ -72,7 +72,7 @@ If you cannot find a suitable issue, get stuck on one, need help with your setup
 These are suggestions that we think would make good Google Summer of Code projects:
 
 * [Beats: Monitor your Java applications with JavaBeat](#beats_java)
-* [Beats: Integrate flows with protocol analyzers in Packetbeat](#beats_packet_protocol)
+* [Beats: More application layer protocols for Packetbeat](#beats_packet_protocol)
 * [Beats: More modules for Metricbeat](#beats_metric_modules)
 * [Beats: More modules for Filebeat](#beats_file_modules)
 * [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
@@ -118,7 +118,7 @@ Nicolas Ruflin, Carlos Pérez-Aradros
 
 
 
-### <a name="beats_packet_protocol"></a>Beats: More Packetbeat Protocols
+### <a name="beats_packet_protocol"></a>Beats: More application layer protocols for Packetbeat
 
 #### Brief Explanation
 
