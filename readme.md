@@ -76,6 +76,7 @@ These are suggestions that we think would make good Google Summer of Code projec
 * [Beats: More modules for Metricbeat](#beats_metric_modules)
 * [Beats: More modules for Filebeat](#beats_file_modules)
 * [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
+* [Elasticsearch: Help to implement the Java High Level Rest Client](#elasticsearch_high_level_rest)
 * [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
 * [Kibana: Calendar Visualization and Filtering](#kibana_calendar_visualization)
 * [Logstash: Java Plugin API](#logstash_java_plugin_api)
@@ -237,6 +238,41 @@ Medium
 #### Mentor
 
 Pablo Musa, Dhaval Kapil
+
+
+### <a name="elasticsearch_high_level_rest"></a>Elasticsearch: Help to implement the Java High Level Rest Client
+
+#### Brief Explanation
+
+Elasticsearch's Java High Level REST Client is [incomplete](https://github.com/elastic/elasticsearch/issues/27205).
+It is missing a few dozen APIs, some of which see fairly common use. This project
+is to add some of the remaining APIs.
+
+#### Expected Results
+
+* More APIs implemented by the High Level Java REST Client
+
+The process of adding a new API is relatively well documented (see "How to add support
+for a new API" [here](https://github.com/elastic/elasticsearch/issues/27205)) but there
+are simply many APIs to add. The neat thing about this is that this project is very
+incremental which is perfect for a first time contributor.
+
+Interested folks might also want to work on the guts of the client and this provides
+a good introduction and tour to the client. Working on the guts of the client is not
+required for the project to be successful but it would be a lovely bonus.
+
+#### Knowledge Prerequisites
+
+* Java - medium
+* Elasticsearch - low or none and we'll teach
+
+#### Skill Level
+
+Medium
+
+#### Mentors
+
+Nik Everett, Igor Motov
 
 
 
