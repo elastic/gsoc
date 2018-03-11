@@ -75,6 +75,7 @@ These are suggestions that we think would make good Google Summer of Code projec
 * [Beats: More application layer protocols for Packetbeat](#beats_packet_protocol)
 * [Beats: More modules for Metricbeat](#beats_metric_modules)
 * [Beats: More modules for Filebeat](#beats_file_modules)
+* [Beats: Pure go packet sniffer](#beats_go_packet_sniffer)
 * [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
 * [Elasticsearch: Help to implement the Java High Level Rest Client](#elasticsearch_high_level_rest)
 * [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
@@ -209,6 +210,38 @@ Medium
 #### Mentors
 
 Nicolas Ruflin, Aravind Putrevu
+
+
+
+### <a name="beats_go_packet_sniffer"></a>Beats: Pure go packet sniffer
+
+#### Brief Explanation
+
+Packetbeat uses libpcap (via gopacket), to recive, filter and process packets
+from network devices. Instead of relying on libpcap, it would be nice to have a
+pure go based implementation, providing packet sniffing and filtering
+capabilities for multiple platforms.
+
+#### Expected Results
+
+* Create go package, that provides a common packet sniffing and filtering API
+* Support for Linux, MacOS, Windows (by integrating with WinPcap/WinPcap10/NPcap drivers)
+* Support for multiple receive queues
+* (Optional) Support for sniffers based on DPDK, netmap and others
+* Update packetbeat
+
+#### Knowledge Prerequisites
+
+* Linux, Windows, MacOS/BSD networking - good
+* Go - good
+
+#### Skill Level
+
+Advanced
+
+#### Mentors
+
+Steffen Siering, Nicolas Ruflin
 
 
 
