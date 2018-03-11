@@ -72,6 +72,7 @@ If you cannot find a suitable issue, get stuck on one, need help with your setup
 These are suggestions that we think would make good Google Summer of Code projects:
 
 * [Beats: Monitor your Java applications with JavaBeat](#beats_java)
+* [Beats: Enhance Packetbeat Flows with Application Layer metrics](#beats_packet_flows)
 * [Beats: More application layer protocols for Packetbeat](#beats_packet_protocol)
 * [Beats: More modules for Metricbeat, Filebeat and Heartbeat](#beats_modules)
 * [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
@@ -115,6 +116,47 @@ Medium
 #### Mentor
 
 Nicolas Ruflin, Carlos Pérez-Aradros
+
+
+### <a name="beats_packet_flows"></a>Beats: Enhance Packetbeat Flows with Application Layer metrics
+
+#### Brief Explanation
+
+Packetbeat can parse and analyze application layer protocols, but also collect
+flow metrics. As of today, flows and application layer support are two very
+independent features in packetbeat. As flows summarise the communication
+between two endpoints, and protocol analyzers log only single transactions as events.
+There exists a parent-child relationship between flows and transactions.
+And Packetbeat should make use of this relationship, so to enhance a flows
+lifetime and provide application specific metrics, based on transport layer and
+application layer protocol support, already available in Packetbeat.
+
+See also the [Packetbeat enhancement request on flows](https://github.com/elastic/beats/issues/3444).
+
+The packetbeat documentations lists [all protocols](https://www.elastic.co/guide/en/beats/packetbeat/master/configuration-protocols.html#configuration-protocols) currently being available in packetbeat.
+
+#### Expected Results
+
+* Integration of all protocol analyzers with flows, documentation, as well as updates to visualizations and dashboards.
+* Integration of transport layer protocols with flows, documentation, visualizations and dashboards.
+* Enhance a flows lifetime to be aware of the transport layers connection state.
+
+#### Knowledge Prerequisites
+
+* Go - medium
+* Networking - medium
+* Applications you will support - none required but you will learn quite a bit by
+  working on the problem and we will happily teach you what we know
+* Elasticsearch - none and we will happily teach the little you would need to learn
+
+#### Skill Level
+
+Medium
+
+#### Mentors
+
+Steffen Siering, Nicolas Ruflin
+
 
 ### <a name="beats_packet_protocol"></a>Beats: More application layer protocols for Packetbeat
 
