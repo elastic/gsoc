@@ -72,10 +72,10 @@ If you cannot find a suitable issue, get stuck on one, need help with your setup
 These are suggestions that we think would make good Google Summer of Code projects:
 
 * [Beats: Monitor your Java applications with JavaBeat](#beats_java)
+* [Beats: Enhance Packetbeat Flows with Application Layer metrics](#beats_packet_flows)
 * [Beats: More application layer protocols for Packetbeat](#beats_packet_protocol)
-* [Beats: More modules for Metricbeat](#beats_metric_modules)
-* [Beats: More modules for Filebeat](#beats_file_modules)
 * [Beats: Pure go packet sniffer](#beats_go_packet_sniffer)
+* [Beats: More modules for Metricbeat, Filebeat and Heartbeat](#beats_modules)
 * [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
 * [Elasticsearch: Help to implement the Java High Level Rest Client](#elasticsearch_high_level_rest)
 * [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
@@ -119,6 +119,45 @@ Medium
 Nicolas Ruflin, Carlos Pérez-Aradros
 
 
+### <a name="beats_packet_flows"></a>Beats: Enhance Packetbeat Flows with Application Layer metrics
+
+#### Brief Explanation
+
+Packetbeat can parse and analyze application layer protocols, but also collect
+flow metrics. As of today, flows and application layer support are two very
+independent features in packetbeat. As flows summarise the communication
+between two endpoints, and protocol analyzers log only single transactions as events.
+There exists a parent-child relationship between flows and transactions.
+And Packetbeat should make use of this relationship, so to enhance a flows
+lifetime and provide application specific metrics, based on transport layer and
+application layer protocol support, already available in Packetbeat.
+
+See also the [Packetbeat enhancement request on flows](https://github.com/elastic/beats/issues/3444).
+
+The packetbeat documentations lists [all protocols](https://www.elastic.co/guide/en/beats/packetbeat/master/configuration-protocols.html#configuration-protocols) currently being available in packetbeat.
+
+#### Expected Results
+
+* Integration of all protocol analyzers with flows, documentation, as well as updates to visualizations and dashboards.
+* Integration of transport layer protocols with flows, documentation, visualizations and dashboards.
+* Enhance a flows lifetime to be aware of the transport layers connection state.
+
+#### Knowledge Prerequisites
+
+* Go - medium
+* Networking - medium
+* Applications you will support - none required but you will learn quite a bit by
+  working on the problem and we will happily teach you what we know
+* Elasticsearch - none and we will happily teach the little you would need to learn
+
+#### Skill Level
+
+Medium
+
+#### Mentors
+
+Steffen Siering, Nicolas Ruflin
+
 
 ### <a name="beats_packet_protocol"></a>Beats: More application layer protocols for Packetbeat
 
@@ -146,13 +185,9 @@ Medium
 
 Steffen Siering, Nicolas Ruflin
 
+### <a name="beats_modules"></a>Beats: More modules for Metricbeat, Filebeat and Heartbeat
 
-
-### <a name="beats_metric_modules"></a>Beats: More Modules for Metricbeat
-
-#### Brief Explanation
-
-Today Metricbeat supports around 30 modules like Apache HTTP, Couchbase, Docker, HAProxy, Kafka, Kubernetes, MongoDB, MySQL, nginx, PostgreSQL, Prometheus, Redis, and ZooKeeper. But we want more! Luckily it is fairly easy to add new modules to Metricbeat. The [developer guide](https://www.elastic.co/guide/en/beats/devguide/current/creating-metricbeat-module.html) can be found in the Beats documentation.
+Modules in Filebeat, Metricbeat and Heartbeat are vital to provide a good out of the box experience. Today Metricbeat and Filebeat provide modules for around 30 services like Apache HTTP, Docker, Mysql, Nginx and more (See: [Filebeat module list](https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-modules.html) and [Metricbeat module list](https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-modules.html)). But we want more! We want to introduce more protocols and service types to Heartbeat. We want to add modules to Filebeat, that are availble in Metricbeat only. And we want to add modules for new services to all Beats. Luckily it is fairly easy to add new Modules to Metricbeat and Filebeat. The [Beats Developer Guide](https://www.elastic.co/guide/en/beats/devguide/current/index.html) can be found in the Beats documentation.
 
 Here is a list of services we are still missing the most:
 
@@ -163,39 +198,13 @@ Here is a list of services we are still missing the most:
 * Mesos
 * Varnish
 
-Your application must include, which module or modules you want to add, why you think they should be included, and which metrics you intend to collect.
+Your application must include, which module or modules you want to add, why you think they should be included, and which metrics or logs you intend to collect.
+The list of modules can contain modules already being available in Metricbeat, yet missing in Filebeat and Heartbeat.
 
 #### Expected Results
 
-Modules for the selected applications, documentation, as well as visualizations and a dashboard in Kibana for each application.
-
-#### Knowledge Prerequisites
-
-* Go - medium
-* Applications you will support - at least a basic understanding so that you know what makes sense to monitor and how do display that information
-* Elasticsearch - none and we will happily teach the little you would need to learn
-
-#### Skill Level
-
-Medium
-
-#### Mentors
-
-Nicolas Ruflin, Carlos Pérez-Aradros
-
-
-
-### <a name="beats_file_modules"></a>Beats: More Modules for Filebeat
-
-#### Brief explanation
-
-Filebeat modules are vital to provide a good out of the box experience. At the moment we support just over 10 modules like Apache HTTP, MySQL, nginx, and system logs. Good candidates for inclusion are the applications we already support in Metricbeat or the ones we would like to add in [Beats: More modules for Metricbeat](#beats_metric_modules).
-
-Your application must include, which module or modules you want to add, why you think they should be included, and which information you intend to collect.
-
-#### Expected Results
-
-Modules for the selected applications, documentation, as well as visualizations and a dashboard in Kibana for each application.
+- Introduce Services/Protocols to Heartbeat.
+- Modules for the selected applications, documentation, as well as visualizations and a dashboard in Kibana for each application.
 
 #### Knowledge Prerequisites
 
@@ -209,8 +218,7 @@ Medium
 
 #### Mentors
 
-Nicolas Ruflin, Aravind Putrevu
-
+Nicolas Ruflin, Carlos Pérez-Aradros, Aravind Putrevu, Steffen Siering
 
 
 ### <a name="beats_go_packet_sniffer"></a>Beats: Pure go packet sniffer
