@@ -16,7 +16,7 @@ In your application please tell us:
 2. Which project idea you want to work on: Which of our ideas is it or describe in detail if it is your own.
 3. How you will implement it: Provide a detailed work timeline that breaks the project into one week milestones and align it to the GSoC timeline.
 4. Why you: Link to a pull request you have submitted to the project you want to work on. If you are applying to work on the Lua client, the pull request would make most sense to be against the current Lua client and not Elasticsearch itself; the same applies for all other projects — we want to see you working on the codebase where you will be spending your time.
-  It is not required to have it merged, since reviewing can take time and we do not rush that process. We just want to see that you can contribute in a meaningful way to the project you want to be working on.
+  It is not required to have the pull request merged, since reviewing can take time and we do not rush that process. We just want to see that you can contribute in a meaningful way to the project you want to be working on.
   Here is a starting point for issues you could dive into:
   * [Elasticsearch `low hanging fruit`](https://github.com/elastic/elasticsearch/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
   * [Logstash `log hanging fruit`](https://github.com/elastic/logstash/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
@@ -85,6 +85,7 @@ These are suggestions that we think would make good Google Summer of Code projec
 Please [open an issue](https://github.com/elastic/gsoc/issues) if you wish to discuss or propose your own idea — there are also some [pointers for other ideas](#other). We definitely value your initiative, so don't be shy.
 
 
+
 ### <a name="beats_java"></a>Beats: Monitor Your Java Applications with JavaBeat
 
 #### Brief Explanation
@@ -117,6 +118,7 @@ Medium
 #### Mentor
 
 Nicolas Ruflin, Carlos Pérez-Aradros
+
 
 
 ### <a name="beats_packet_flows"></a>Beats: Enhance Packetbeat Flows with Application Layer metrics
@@ -159,6 +161,7 @@ Medium
 Steffen Siering, Nicolas Ruflin
 
 
+
 ### <a name="beats_packet_protocol"></a>Beats: More application layer protocols for Packetbeat
 
 #### Brief Explanation
@@ -184,6 +187,8 @@ Medium
 #### Mentors
 
 Steffen Siering, Nicolas Ruflin
+
+
 
 ### <a name="beats_modules"></a>Beats: More modules for Metricbeat, Filebeat and Heartbeat
 
@@ -218,7 +223,8 @@ Medium
 
 #### Mentors
 
-Nicolas Ruflin, Carlos Pérez-Aradros, Aravind Putrevu, Steffen Siering
+Nicolas Ruflin, Carlos Pérez-Aradros, Steffen Siering
+
 
 
 ### <a name="beats_go_packet_sniffer"></a>Beats: Pure go packet sniffer
@@ -279,6 +285,7 @@ Medium
 #### Mentor
 
 Pablo Musa, Dhaval Kapil
+
 
 
 ### <a name="elasticsearch_high_level_rest"></a>Elasticsearch: Help to implement the Java High Level Rest Client
