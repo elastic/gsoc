@@ -10,18 +10,27 @@ This readme will get you started with project ideas, mentors, where to ask quest
 
 Please read and apply via [https://summerofcode.withgoogle.com/get-started/](https://summerofcode.withgoogle.com/get-started/).
 
-In your application please tell us:
+In your application please tell us about:
 
-1. Who you are: Your name and how to contact you.
-2. Which project idea you want to work on: Which of our ideas is it or describe in detail if it is your own.
-3. How you will implement it: Provide a detailed work timeline that breaks the project into one week milestones and align it to the GSoC timeline.
-4. Why you: Link to a pull request you have submitted to the project you want to work on. If you are applying to work on the Lua client, the pull request would make most sense to be against the current Lua client and not Elasticsearch itself; the same applies for all other projects — we want to see you working on the codebase where you will be spending your time.
-  It is not required to have the pull request merged, since reviewing can take time and we do not rush that process. We just want to see that you can contribute in a meaningful way to the project you want to be working on.
+1. **You**: Your name and how to contact you.
+1. **Project**: Which of our project ideas you want to be working on or if it is your own, describe it in detail.
+1. **Deliverables**: What is the outcome of your project. The more technical details the better.
+1. **Timeline**: Provide a detailed work timeline that breaks the project into one week milestones and align it to the GSoC timeline.
+1. **Availability**: Describe your time commitment and be very explicit about any other engagements — both related to work and holidays or trips. No surprises please.
+1. **Pull request**: Link to a pull request you have submitted to the project you want to work on. If you are applying to work on the Lua client, the pull request would make most sense to be against the current Lua client and not Elasticsearch itself; the same applies for all other projects — we want to see you working on the codebase where you will be spending your time.
+  It is not required to have the pull request merged, since reviewing can take time and we do not rush that process. We just want to see that you can contribute in a meaningful way to the project you want to be working on. Start small and only add more complex tasks later on. And while documentation fixes or enhancement are welcome, showing your programming skills will earn you bonus points.
   Here is a starting point for issues you could dive into:
   * [Elasticsearch `low hanging fruit`](https://github.com/elastic/elasticsearch/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
   * [Logstash `log hanging fruit`](https://github.com/elastic/logstash/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
   * [Kibana `low hanging fruit`](https://github.com/elastic/kibana/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
   * [Beats `good first issue`](https://github.com/elastic/beats/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+
+If you want us to review your application before the final submission:
+
+* Create a Google Doc and add it as a draft in the [GSoC application](https://summerofcode.withgoogle.com).
+* Once you are ready for a review, share the document with the mentors listed for your project with the permission `Can comment` — see the screenshot below.
+
+![](share.png)
 
 Elastic is always seeking to diversify its contributors and especially welcomes applications from women from all backgrounds and people of color.
 
@@ -82,7 +91,7 @@ These are suggestions that we think would make good Google Summer of Code projec
 * [Kibana: Calendar Visualization and Filtering](#kibana_calendar_visualization)
 * [Logstash: Java Plugin API](#logstash_java_plugin_api)
 
-Please [open an issue](https://github.com/elastic/gsoc/issues) if you wish to discuss or propose your own idea — there are also some [pointers for other ideas](#other). We definitely value your initiative, so don't be shy.
+Please start a question on our [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community/elastic-gsoc) if you wish to propose your own idea — there are also some [pointers for other ideas](#other). We definitely value your initiative, so don't be shy.
 
 
 
@@ -430,12 +439,10 @@ You may get some inspiration from our issues:
 * [Beats](https://github.com/elastic/beats/issues)
 * Any other open source project in the [Elastic organization on GitHub](https://github.com/elastic), for example [Ansible playbook for Elasticsearch](https://github.com/elastic/ansible-elasticsearch)
 
-Please discuss any of these in an [issue](https://github.com/elastic/gsoc/issues) with us before submitting to maximize your chances of being accepted.
+Please discuss any project ideas on the [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community/elastic-gsoc) with us before submitting to maximize your chances of being accepted.
 
 
 
 ## I Need Help
 
-If you want to discuss a specific project idea, use the [issues](https://github.com/elastic/gsoc/issues).
-
-For all other questions like the application process, your pull request,... head over to [Discuss](https://discuss.elastic.co/c/elastic-community/elastic-gsoc).
+For all questions like the application process, your pull request,... head over to our [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community/elastic-gsoc).
