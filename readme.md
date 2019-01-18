@@ -15,10 +15,10 @@ In your application please tell us about:
 1. **You**: Your name and how to contact you.
 1. **Project**: Which of our project ideas you want to be working on or if it is your own, describe it in detail.
 1. **Deliverables**: What is the outcome of your project. The more technical details the better.
-1. **Timeline**: Provide a detailed work timeline that breaks the project into one week milestones and align it to the GSoC timeline.
-1. **Availability**: Describe your time commitment and be very explicit about any other engagements — both related to work and holidays or trips. No surprises please.
-1. **Pull request**: Link to a pull request you have submitted to the project you want to work on. If you are applying to work on the Lua client, the pull request would make most sense to be against the current Lua client and not Elasticsearch itself; the same applies for all other projects — we want to see you working on the codebase where you will be spending your time.
-  It is not required to have the pull request merged, since reviewing can take time and we do not rush that process. We want to see that you can contribute in a meaningful way to the project you want to be working on. Start small and only add more complex tasks later on. And while documentation fixes or enhancement are welcome, showing your programming skills will earn you bonus points.
+1. **Timeline**: Provide a detailed work timeline that breaks the project into one-week milestones and align them to the GSoC timeline.
+1. **Availability**: Describe your time commitment and be very explicit about any other engagements — both related to work and holidays or trips. No surprises, please.
+1. **Pull request**: Link to a pull request you have submitted to the project you want to work on. If you are applying to work on the Lua client, the pull request would make the most sense to be against the current Lua client and not Elasticsearch itself; the same applies for all other projects — we want to see you working on the codebase where you will be spending your time.
+  It is not required to have the pull request merged since reviewing can take time and we do not rush that process. We want to see that you can contribute in a meaningful way to the project you want to be working on. Start small and only add more complex tasks later on. And while documentation fixes or enhancement are welcome, showing your programming skills will earn you bonus points.
   Here is a starting point for issues you could dive into:
   * [Elasticsearch `good first issue`](https://github.com/elastic/elasticsearch/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+)
   * [Logstash `good first issue`](https://github.com/elastic/logstash/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+)
@@ -89,9 +89,9 @@ While the Elastic Stack heavily relies on Java our monitoring capabilities in th
 
 * Consume all metrics from verbose GC log.
 * Collect thread counts and blocked threads.
-* Track non heap memory allocations.
-* Make it possible to compare sum of memory usages reported by the JVM versus what the operating system reports for the entire process.
-* The Beat should handle JDK8 ad JDK9 for OpenJDK and Oracle JDK on Linux and Windows.
+* Track non-heap memory allocations.
+* Make it possible to compare the sum of memory usages reported by the JVM versus what the operating system reports for the entire process.
+* The Beat should handle JDK8 and JDK9 for OpenJDK and Oracle JDK on Linux and Windows.
 
 #### Expected Results
 
@@ -122,20 +122,20 @@ Nicolas Ruflin, Carlos Pérez-Aradros
 
 Packetbeat can parse and analyze application layer protocols, but also collect
 flow metrics. As of today, flows and application layer support are two very
-independent features in packetbeat. As flows summarise the communication
+independent features in Packetbeat. As flows summarise the communication
 between two endpoints, and protocol analyzers log only single transactions as events.
 There exists a parent-child relationship between flows and transactions.
 And Packetbeat should make use of this relationship, so to enhance a flows
-lifetime and provide application specific metrics, based on transport layer and
+lifetime and provide application-specific metrics, based on transport layer and
 application layer protocol support, already available in Packetbeat.
 
 See also the [Packetbeat enhancement request on flows](https://github.com/elastic/beats/issues/3444).
 
-The packetbeat documentations lists [all protocols](https://www.elastic.co/guide/en/beats/packetbeat/master/configuration-protocols.html#configuration-protocols) currently being available in packetbeat.
+The Packetbeat documentations lists [all protocols](https://www.elastic.co/guide/en/beats/packetbeat/master/configuration-protocols.html#configuration-protocols) currently being available in Packetbeat.
 
 #### Expected Results
 
-* Integration of all protocol analyzers with flows, documentation, as well as updates to visualizations and dashboards.
+* Integration of all protocol analyzers with flows, documentation, as well as updates to visualizations, and dashboards.
 * Integration of transport layer protocols with flows, documentation, visualizations and dashboards.
 * Enhance a flows lifetime to be aware of the transport layers connection state.
 
@@ -187,7 +187,7 @@ Steffen Siering, Nicolas Ruflin
 
 ### <a name="beats_modules"></a>Beats: More modules for Metricbeat, Filebeat and Heartbeat
 
-Modules in Filebeat, Metricbeat and Heartbeat are vital to provide a good out of the box experience. Today Metricbeat and Filebeat provide modules for around 30 services like Apache HTTP, Docker, Mysql, Nginx and more (See: [Filebeat module list](https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-modules.html) and [Metricbeat module list](https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-modules.html)). But we want more! We want to introduce more protocols and service types to Heartbeat. We want to add modules to Filebeat, that are availble in Metricbeat only. And we want to add modules for new services to all Beats. Luckily it is fairly easy to add new Modules to Metricbeat and Filebeat. The [Beats Developer Guide](https://www.elastic.co/guide/en/beats/devguide/current/index.html) can be found in the Beats documentation.
+Modules in Filebeat, Metricbeat, and Heartbeat are vital to providing a good out of the box experience. Today Metricbeat and Filebeat provide modules for around 30 services like Apache HTTP, Docker, Mysql, Nginx and more (See: [Filebeat module list](https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-modules.html) and [Metricbeat module list](https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-modules.html)). But we want more! We want to introduce more protocols and service types to Heartbeat. We want to add modules to Filebeat, that are available in Metricbeat only. And we want to add modules for new services to all Beats. Luckily it is fairly easy to add new Modules to Metricbeat and Filebeat. The [Beats Developer Guide](https://www.elastic.co/guide/en/beats/devguide/current/index.html) can be found in the Beats documentation.
 
 Here is a list of services we are still missing the most:
 
@@ -226,7 +226,7 @@ Nicolas Ruflin, Carlos Pérez-Aradros, Steffen Siering
 
 #### Brief Explanation
 
-Packetbeat uses libpcap (via gopacket), to recive, filter and process packets
+Packetbeat uses libpcap (via gopacket), to receive, filter and process packets
 from network devices. Instead of relying on libpcap, it would be nice to have a
 pure go based implementation, providing packet sniffing and filtering
 capabilities for multiple platforms.
@@ -236,8 +236,8 @@ capabilities for multiple platforms.
 * Create go package, that provides a common packet sniffing and filtering API
 * Support for Linux, MacOS, Windows (by integrating with WinPcap/WinPcap10/NPcap drivers)
 * Support for multiple receive queues
-* (Optional) Support for sniffers based on DPDK, netmap and others
-* Update packetbeat
+* (Optional) Support for sniffers based on DPDK, netmap, and others
+* Update Packetbeat
 
 #### Knowledge Prerequisites
 
@@ -264,7 +264,7 @@ This project aims to implement the missing features from 2.x and also add the ne
 
 #### Expected Results
 
-An updated Lua client to access the Elasticsearch REST API compatible with the latest version (currently 6.1).
+An updated Lua client to access the Elasticsearch REST API compatible with the latest version (currently 6.5).
 
 #### Knowledge Prerequisites
 
@@ -288,7 +288,7 @@ Pablo Musa, Dhaval Kapil
 #### Brief Explanation
 
 One of the things Elasticsearch can do is to "highlight" a snippet from a
-matching document. Currently documents are highlighted one after another during
+matching document. Currently, documents are highlighted one after another during
 the highlighting phase. The trouble with this is that some of the
 implementations of highlighting are more efficient if they highlight in a
 different order.
@@ -297,7 +297,7 @@ different order.
 
 * Change to Elasticsearch to allow sending all documents to highlight to the
   highlighters at a time.
-* Change to built in highlighters to support this and make intelligent
+* Change to built-in highlighters to support this and make intelligent
   decisions about the order. There are four builtin highlighters, two of which
   will likely see significant benefit from this change.
 * Benchmarking to show the performance improvements this brings.
@@ -332,7 +332,7 @@ Since the best way to validate an API design is to use it extensively, this proj
 #### Expected Results
 
  - Port several existing ruby-based Logstash plugins to use the proposed Java APIs in a variety of JVM languages,
- - Provide critical and constructive feedback about use of the API,
+ - Provide critical and constructive feedback about the use of the API,
  - File design bugs against the proposed Java API, and work with Logstash developers to improve it.
 
 #### Knowledge Prerequisites
