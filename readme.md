@@ -68,16 +68,14 @@ If you cannot find a suitable issue, get stuck on one, need help with your setup
 
 These are suggestions that we think would make good Google Summer of Code projects:
 
-* [Beats: Monitor your Java applications with JavaBeat](#beats_java)
-* [Beats: Enhance Packetbeat Flows with Application Layer metrics](#beats_packet_flows)
-* [Beats: More application layer protocols for Packetbeat](#beats_packet_protocol)
-* [Beats: Pure go packet sniffer](#beats_go_packet_sniffer)
-* [Beats: More modules for Metricbeat, Filebeat and Heartbeat](#beats_modules)
+* TODO [Beats: Monitor your Java applications with JavaBeat](#beats_java)
+* TODO [Beats: Enhance Packetbeat Flows with Application Layer metrics](#beats_packet_flows)
+* TODO [Beats: More application layer protocols for Packetbeat](#beats_packet_protocol)
+* TODO [Beats: Pure go packet sniffer](#beats_go_packet_sniffer)
+* TODO [Beats: More modules for Metricbeat, Filebeat and Heartbeat](#beats_modules)
 * [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
-* [Elasticsearch: Help to implement the Java High Level Rest Client](#elasticsearch_high_level_rest)
-* [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
-* [Kibana: Calendar Visualization and Filtering](#kibana_calendar_visualization)
-* [Logstash: Java Plugin API](#logstash_java_plugin_api)
+* TODO [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
+* TODO [Logstash: Java Plugin API](#logstash_java_plugin_api)
 
 Please start a question on our [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community/elastic-gsoc) if you wish to propose your own idea — there are also some [pointers for other ideas](#other). We definitely value your initiative, so don't be shy.
 
@@ -285,42 +283,6 @@ Pablo Musa, Dhaval Kapil
 
 
 
-### <a name="elasticsearch_high_level_rest"></a>Elasticsearch: Help to implement the Java High Level Rest Client
-
-#### Brief Explanation
-
-Elasticsearch's Java High Level REST Client is [incomplete](https://github.com/elastic/elasticsearch/issues/27205).
-It is missing a few dozen APIs, some of which see fairly common use. This project
-is to add some of the remaining APIs.
-
-#### Expected Results
-
-* More APIs implemented by the High Level Java REST Client
-
-The process of adding a new API is relatively well documented (see "How to add support
-for a new API" [here](https://github.com/elastic/elasticsearch/issues/27205)) but there
-are simply many APIs to add. The neat thing about this is that this project is very
-incremental which is perfect for a first time contributor.
-
-Interested folks might also want to work on the guts of the client and this provides
-a good introduction and tour to the client. Working on the guts of the client is not
-required for the project to be successful but it would be a lovely bonus.
-
-#### Knowledge Prerequisites
-
-* Java - medium
-* Elasticsearch - low or none and we'll teach
-
-#### Skill Level
-
-Medium
-
-#### Mentors
-
-Nik Everett, Igor Motov
-
-
-
 ### <a name="elasticsearch_highlighting_order"></a>Elasticsearch: Speed Up Some Highlighting
 
 #### Brief Explanation
@@ -354,36 +316,6 @@ Medium
 #### Mentors
 
 Nik Everett, Igor Motov
-
-
-
-### <a name="kibana_calendar_visualization"></a>Kibana: Calendar Visualization and Filtering
-
-#### Brief Explanation
-
-At the moment we are missing good calendar components. This project should add a specialized form of a heatmap rendering the calendar month view with options regarding the first day of the week and text/links displayed in the tiles. Additionally, it should be possible to apply colors depending on some criteria.
-
-#### Expected Results
-
-* A calendar component in Kibana for single visualizations, but it must also play well with dashboards
-* Filtering: Slice and dice data by region, a tag, an attribute,...
-* Besides the naive implementation this will need a lot of testing for unexpected scenarios, like a lot of data, a lot of events on just a few days
-
-#### Knowledge Prerequisites
-
-* Node.js - medium
-* React - medium
-* Kibana - some experience is helpful, but not strictly required and you can also
-  learn as we get started with the project
-* Elasticsearch - none and we will happily teach the little you would need to learn
-
-#### Skill Level
-
-Simple
-
-#### Mentors
-
-Tim Roes, Thomas Neirynck, Daniel Schneiter
 
 
 
