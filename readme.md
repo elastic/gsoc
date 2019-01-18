@@ -1,6 +1,6 @@
 # Elastic's Google Summer of Code
 
-[Elastic](https://www.elastic.co) is excited to participate in the Google Summer of Code 2018 program and we hope that you are too!
+[Elastic](https://www.elastic.co) is excited to participate in the Google Summer of Code 2019 program and we hope that you are too!
 
 This readme will get you started with project ideas, mentors, where to ask questions, and how to apply.
 
@@ -18,12 +18,12 @@ In your application please tell us about:
 1. **Timeline**: Provide a detailed work timeline that breaks the project into one week milestones and align it to the GSoC timeline.
 1. **Availability**: Describe your time commitment and be very explicit about any other engagements — both related to work and holidays or trips. No surprises please.
 1. **Pull request**: Link to a pull request you have submitted to the project you want to work on. If you are applying to work on the Lua client, the pull request would make most sense to be against the current Lua client and not Elasticsearch itself; the same applies for all other projects — we want to see you working on the codebase where you will be spending your time.
-  It is not required to have the pull request merged, since reviewing can take time and we do not rush that process. We just want to see that you can contribute in a meaningful way to the project you want to be working on. Start small and only add more complex tasks later on. And while documentation fixes or enhancement are welcome, showing your programming skills will earn you bonus points.
+  It is not required to have the pull request merged, since reviewing can take time and we do not rush that process. We want to see that you can contribute in a meaningful way to the project you want to be working on. Start small and only add more complex tasks later on. And while documentation fixes or enhancement are welcome, showing your programming skills will earn you bonus points.
   Here is a starting point for issues you could dive into:
-  * [Elasticsearch `low hanging fruit`](https://github.com/elastic/elasticsearch/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
-  * [Logstash `log hanging fruit`](https://github.com/elastic/logstash/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
-  * [Kibana `low hanging fruit`](https://github.com/elastic/kibana/issues?q=is%3Aopen+is%3Aissue+label%3A%22low+hanging+fruit%22)
-  * [Beats `good first issue`](https://github.com/elastic/beats/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+  * [Elasticsearch `good first issue`](https://github.com/elastic/elasticsearch/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+)
+  * [Logstash `good first issue`](https://github.com/elastic/logstash/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+)
+  * [Kibana `good first issue`](https://github.com/elastic/kibana/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+)
+  * [Beats `good first issue`](https://github.com/elastic/beats/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+)
 
 If you want us to review your application before the final submission:
 
@@ -38,24 +38,12 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 
 ## Team
 
-* [Andy James](https://github.com/andymjames) mentor
-* [Archana Sriram](https://github.com/archanid) mentor
-* [Aravind Putrevu](https://github.com/aravindputrevu) mentor
-* [Carlos Pérez-Aradros](https://github.com/exekias) mentor
-* [Daniel Schneiter](https://github.com/dschneiter) mentor
-* [Dhaval Kapil](https://github.com/DhavalKapil) mentor
+* [Aravind Putrevu](https://github.com/aravindputrevu) admin
+* [Dhaval Kapil](https://github.com/DhavalKapil), mentor
 * [Elyssa Emrich](https://github.com/eemrich) admin
-* [Igor Motov](https://github.com/imotov) mentor
-* [Jason Wong](https://github.com/logmonster) mentor
-* [Nicolas Ruflin](https://github.com/ruflin) mentor
-* [Nik Everett](https://github.com/nik9000) mentor
+* [Emanuil Tolev](https://github.com/emanuil-tolev) mentor
 * [Pablo Musa](https://github.com/pmusa) mentor
-* [Philipp Krenn](https://github.com/xeraa) admin & mentor
-* [Ry Biesemeyer](https://github.com/yaauie) mentor
-* [Steffen Siering](https://github.com/urso) mentor
-* [Thomas Neirynck](https://github.com/thomasneirynck) mentor
-* [Tim Roes](https://github.com/timroes) mentor
-* [Tyler Hannan](https://github.com/tylerhannan) admin
+* [Philipp Krenn](https://github.com/xeraa) admin
 
 
 
