@@ -39,9 +39,9 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 ## Team
 
 * [Aravind Putrevu](https://github.com/aravindputrevu) admin
-* [Dhaval Kapil](https://github.com/DhavalKapil), mentor
-* [Elyssa Emrich](https://github.com/eemrich) admin
+* [Dhaval Kapil](https://github.com/DhavalKapil) mentor
 * [Emanuil Tolev](https://github.com/emanuil-tolev) mentor
+* [Ning Chang](https://github.com/cforchangning) admin
 * [Pablo Musa](https://github.com/pmusa) mentor
 * [Philipp Krenn](https://github.com/xeraa) admin
 
