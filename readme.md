@@ -39,11 +39,17 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 ## Team
 
 * [Aravind Putrevu](https://github.com/aravindputrevu) admin
+* [Carlos Pérez-Aradros](https://github.com/exekias) mentor
 * [Dhaval Kapil](https://github.com/DhavalKapil) mentor
 * [Emanuil Tolev](https://github.com/emanuil-tolev) mentor
+* [Igor Motov](https://github.com/imotov) mentor
+* [Nicolas Ruflin](https://github.com/ruflin) mentor
+* [Nik Everett](https://github.com/nik9000) mentor
 * [Ning Chang](https://github.com/cforchangning) admin
 * [Pablo Musa](https://github.com/pmusa) mentor
 * [Philipp Krenn](https://github.com/xeraa) admin
+* [Ry Biesemeyer](https://github.com/yaauie) mentor
+* [Steffen Siering](https://github.com/urso) mentor
 
 
 
@@ -68,14 +74,14 @@ If you cannot find a suitable issue, get stuck on one, need help with your setup
 
 These are suggestions that we think would make good Google Summer of Code projects:
 
-* TODO [Beats: Monitor your Java applications with JavaBeat](#beats_java)
-* TODO [Beats: Enhance Packetbeat Flows with Application Layer metrics](#beats_packet_flows)
-* TODO [Beats: More application layer protocols for Packetbeat](#beats_packet_protocol)
-* TODO [Beats: Pure go packet sniffer](#beats_go_packet_sniffer)
-* TODO [Beats: More modules for Metricbeat, Filebeat and Heartbeat](#beats_modules)
+* [Beats: Monitor your Java applications with JavaBeat](#beats_java)
+* [Beats: Enhance Packetbeat Flows with Application Layer metrics](#beats_packet_flows)
+* [Beats: More application layer protocols for Packetbeat](#beats_packet_protocol)
+* [Beats: Pure go packet sniffer](#beats_go_packet_sniffer)
+* [Beats: More modules for Metricbeat, Filebeat and Heartbeat](#beats_modules)
 * [Elasticsearch Clients: Update elasticsearch-lua](#elasticsearch_client_lua)
-* TODO [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
-* TODO [Logstash: Java Plugin API](#logstash_java_plugin_api)
+* [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
+* [Logstash: Java Plugin API](#logstash_java_plugin_api)
 
 Please start a question on our [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community/elastic-gsoc) if you wish to propose your own idea — there are also some [pointers for other ideas](#other). We definitely value your initiative, so don't be shy.
 
@@ -91,7 +97,7 @@ While the Elastic Stack heavily relies on Java our monitoring capabilities in th
 * Collect thread counts and blocked threads.
 * Track non-heap memory allocations.
 * Make it possible to compare the sum of memory usages reported by the JVM versus what the operating system reports for the entire process.
-* The Beat should handle JDK8 and JDK9 for OpenJDK and Oracle JDK on Linux and Windows.
+* The Beat should handle JDK8 and JDK11 for OpenJDK and Oracle JDK on Linux and Windows.
 
 #### Expected Results
 
