@@ -66,7 +66,7 @@ While you do not need to be an expert, you need to be comfortable working with t
 
 You will need to show off your skills by linking to a pull request you have submitted to your project. The pull request does not need to be big or complex, but we want to be sure that you can hit the ground running and we won't be spending the first two weeks with tooling issues.
 
-If you cannot find a suitable issue, get stuck on one, need help with your setup, or anything else where you are unsure how to proceed: We have created a [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community/elastic-gsoc) just for that and we will actively monitor any open questions there. [Discuss](https://discuss.elastic.co) is generally the best place for questions around all our open source projects, so we can get started with that workflow right away.
+If you cannot find a suitable issue, get stuck on one, need help with your setup, or anything else where you are unsure how to proceed: We have created a [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community-ecosystem/elastic-gsoc) just for that and we will actively monitor any open questions there. [Discuss](https://discuss.elastic.co) is generally the best place for questions around all our open source projects, so we can get started with that workflow right away.
 
 
 
@@ -83,7 +83,7 @@ These are suggestions that we think would make good Google Summer of Code projec
 * [Elasticsearch: Speed up some highlighting](#elasticsearch_highlighting_order)
 * [Logstash: Java Plugin API](#logstash_java_plugin_api)
 
-Please start a question on our [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community/elastic-gsoc) if you wish to propose your own idea — there are also some [pointers for other ideas](#other). We definitely value your initiative, so don't be shy.
+Please start a question on our [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community-ecosystem/elastic-gsoc) if you wish to propose your own idea — there are also some [pointers for other ideas](#other). We definitely value your initiative, so don't be shy.
 
 
 
@@ -365,10 +365,10 @@ You may get some inspiration from our issues:
 * [Beats](https://github.com/elastic/beats/issues)
 * Any other open source project in the [Elastic organization on GitHub](https://github.com/elastic), for example [Ansible playbook for Elasticsearch](https://github.com/elastic/ansible-elasticsearch)
 
-Please discuss any project ideas on the [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community/elastic-gsoc) with us before submitting to maximize your chances of being accepted.
+Please discuss any project ideas on the [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community-ecosystem/elastic-gsoc) with us before submitting to maximize your chances of being accepted.
 
 
 
 ## I Need Help
 
-For all questions like the application process, your pull request,... head over to our [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community/elastic-gsoc).
+For all questions like the application process, your pull request,... head over to our [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community-ecosystem/elastic-gsoc).
