@@ -52,18 +52,19 @@ Please start a question on our [GSoC Discuss group](https://discuss.elastic.co/c
 
 
 
-### Automatic Document System for TypeScript Components
+### Automatic Documentation System for TypeScript Components
 
 #### Brief Explanation
 
-A better automatic document system for our TypeScript components. Specifically we're looking for a better method to extract the acceptable values for each prop on the API. This would be done through automatic transversal of the EUI components itself combined the type values from TS with our own inline comments.
+A better automatic system for documenting EUI TypeScript components. Specifically we're looking for a better method to extract the acceptable values for each prop on the API. This would be done through automatic transversal of the EUI components itself, combined with the type values from TS and our own inline comments.
 
 #### Expected Results
 
-
+More accurate, robust prop documentation within the existing "Props" tab for each example section in component documentation. As the EUI team is nearing completion of complete TypeScript conversion, it is possible that the current type and prop traversal system can be entirely replaced.
 
 #### Knowledge Prerequisites
 
+* TypeScript
 * React - medium
 * Elasticsearch - none and we will happily teach the little you would need to learn
 
@@ -81,11 +82,11 @@ Chandler Prall, Greg Thompson
 
 #### Brief Explanation
 
-A better playground / toggle system for our live documentation. Right now we have flat read-only code displayed next to static examples. It would be nice if people could change the code examples in browser on our docs site and see the changes live in the examples.
+A better playground / toggle system for [EUI live documentation](https://elastic.github.io/eui/). Right now we have flat, read-only code displayed next to static examples. It would be nice if people could change the code examples in-browser on our docs site and see the changes live in the examples.
 
 #### Expected Results
 
-
+An edit mechanism that would allow users to change, add, or otherwise modify props and content in rendered examples.
 
 #### Knowledge Prerequisites
 
@@ -100,6 +101,39 @@ Medium
 
 Chandler Prall, Greg Thompson
 
+
+
+### Multi-project Testing Suite
+
+#### Brief Explanation
+
+Automated testing for projects and deployments that we expect EUI to support. Currently, we rely on manual build steps or testing suites (functional and/or unit tests) provided by consuming applications to check environment compatibility and catch instances of breaking API changes. Conversion to and adoption of TypeScript has helped at a low level, but we need broader, less manual means of understanding support coverage.
+
+#### Expected Results
+
+As script or pattern of scritps that EUI engineers can run to:
+
+1) install EUI in various project target instances<sup>*</sup>
+2) run the consuming project's linting and/or testing suite(s)
+3) run a production build of the consuming project
+4) detect and report failures and incompatibilities
+
+_<sup>*</sup> [elastic/eui#2760](https://github.com/elastic/eui/issues/2760) tracks the discussion about which projects to support_
+
+
+#### Knowledge Prerequisites
+
+* Test automation
+* React - medium
+* Elasticsearch - none and we will happily teach the little you would need to learn
+
+#### Skill Level
+
+Medium
+
+#### Mentor
+
+Chandler Prall, Greg Thompson
 
 
 ### Other Ideas
