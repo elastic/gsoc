@@ -6,7 +6,7 @@ This readme will get you started with project ideas, mentors, where to ask quest
 
 
 
-## Why EUI?
+## What is the Elastic UI Framework and why are we excited about this project?
 
 The Elastic UI framework (EUI) is at the :heart: of all interfaces at Elastic. It started as the design system for [Kibana](https://github.com/elastic/kibana), but has grown to be used by and shaped by teams across Elastic. Recently, EUI has be adopted by projects large and small outside of Elastic, and has welcomed contributions from designers and developers all over the world.
 
