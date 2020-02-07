@@ -6,6 +6,15 @@ This readme will get you started with project ideas, mentors, where to ask quest
 
 
 
+## Why EUI?
+
+The Elastic UI framework (EUI) is at the :heart: of all interfaces at Elastic. It started as the design system for [Kibana](https://github.com/elastic/kibana), but has grown to be used by and shaped by teams across Elastic. Recently, EUI has be adopted by projects large and small outside of Elastic, and has welcomed contributions from designers and developers all over the world.
+
+The teams that have adopted EUI move fast and are continuously releasing great features. What this means is that EUI is constantly improving and growing to support those teams. We often release updates weekly, and new features can have immediate impact, leading to quick feedback cycles and new ideas. We take feature requests seriously and truly appreciate those that take time to help improve EUI.
+
+We feel that the best way to keep improving EUI and supporting the growing number of teams adopting it is to 1) stabilize our support for widely-used projects and platforms outside Elastic, and 2) continue to provide thorough, thoughtful, usable documentation.
+
+
 ## Application Instructions
 
 Please read and apply via [https://summerofcode.withgoogle.com/get-started/](https://summerofcode.withgoogle.com/get-started/).
