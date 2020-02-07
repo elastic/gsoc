@@ -6,6 +6,15 @@ This readme will get you started with project ideas, mentors, where to ask quest
 
 
 
+## What is the Elastic UI Framework and why are we excited about this project?
+
+The Elastic UI framework (EUI) is at the :heart: of all interfaces at Elastic. It started as the design system for [Kibana](https://github.com/elastic/kibana), but has grown to be used by and shaped by teams across Elastic. Recently, EUI has be adopted by projects large and small outside of Elastic, and has welcomed contributions from designers and developers all over the world.
+
+The teams that have adopted EUI move fast and are continuously releasing great features. What this means is that EUI is constantly improving and growing to support those teams. We often release updates weekly, and new features can have immediate impact, leading to quick feedback cycles and new ideas. We take feature requests seriously and truly appreciate those that take time to help improve EUI.
+
+We feel that the best way to keep improving EUI and supporting the growing number of teams adopting it is to 1) stabilize our support for widely-used projects and platforms outside Elastic, and 2) continue to provide thorough, thoughtful, usable documentation. In our attempt solve a real need in the open source community, we want to be as helpful as possible in getting folks started the right way. 
+
+
 ## Application Instructions
 
 Please read and apply via [https://summerofcode.withgoogle.com/get-started/](https://summerofcode.withgoogle.com/get-started/).
@@ -52,18 +61,19 @@ Please start a question on our [GSoC Discuss group](https://discuss.elastic.co/c
 
 
 
-### Automatic Document System for TypeScript Components
+### Automatic Documentation System for TypeScript Components
 
 #### Brief Explanation
 
-A better automatic document system for our TypeScript components. Specifically we're looking for a better method to extract the acceptable values for each prop on the API. This would be done through automatic transversal of the EUI components itself combined the type values from TS with our own inline comments.
+A better automatic system for documenting EUI TypeScript components. Specifically we're looking for a better method to extract the acceptable values for each prop on the API. This would be done through automatic transversal of the EUI components itself, combined with the type values from TS and our own inline comments.
 
 #### Expected Results
 
-
+More accurate, robust prop documentation within the existing "Props" tab for each example section in component documentation. As the EUI team is nearing completion of complete TypeScript conversion, it is possible that the current type and prop traversal system can be entirely replaced.
 
 #### Knowledge Prerequisites
 
+* TypeScript
 * React - medium
 * Elasticsearch - none and we will happily teach the little you would need to learn
 
@@ -81,11 +91,11 @@ Chandler Prall, Greg Thompson
 
 #### Brief Explanation
 
-A better playground / toggle system for our live documentation. Right now we have flat read-only code displayed next to static examples. It would be nice if people could change the code examples in browser on our docs site and see the changes live in the examples.
+A better playground / toggle system for [EUI live documentation](https://elastic.github.io/eui/). Right now we have flat, read-only code displayed next to static examples. It would be nice if people could change the code examples in-browser on our docs site and see the changes live in the examples.
 
 #### Expected Results
 
-
+An edit mechanism that would allow users to change, add, or otherwise modify props and content in rendered examples.
 
 #### Knowledge Prerequisites
 
@@ -100,6 +110,39 @@ Medium
 
 Chandler Prall, Greg Thompson
 
+
+
+### Multi-project Testing Suite
+
+#### Brief Explanation
+
+Automated testing for projects and deployments that we expect EUI to support. Currently, we rely on manual build steps or testing suites (functional and/or unit tests) provided by consuming applications to check environment compatibility and catch instances of breaking API changes. Conversion to and adoption of TypeScript has helped at a low level, but we need broader, less manual means of understanding support coverage.
+
+#### Expected Results
+
+As script or pattern of scritps that EUI engineers can run to:
+
+1) install EUI in various project target instances<sup>*</sup>
+2) run the consuming project's linting and/or testing suite(s)
+3) run a production build of the consuming project
+4) detect and report failures and incompatibilities
+
+_<sup>*</sup> [elastic/eui#2760](https://github.com/elastic/eui/issues/2760) tracks the discussion about which projects to support_
+
+
+#### Knowledge Prerequisites
+
+* Test automation
+* React - medium
+* Elasticsearch - none and we will happily teach the little you would need to learn
+
+#### Skill Level
+
+Medium
+
+#### Mentor
+
+Chandler Prall, Greg Thompson
 
 
 ### Other Ideas
