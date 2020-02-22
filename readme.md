@@ -66,7 +66,7 @@ Please start a question on our [GSoC Discuss group](https://discuss.elastic.co/c
 
 
 
-### Automatic Documentation System for TypeScript Components
+### Project-1: Automatic Documentation System for TypeScript Components
 
 #### Brief Explanation
 
@@ -86,13 +86,13 @@ More accurate, robust prop documentation within the existing "Props" tab for eac
 
 Medium
 
-#### Mentor
+#### Mentors
 
 Chandler Prall, Greg Thompson
 
 
 
-### Playground / Toggle System for Live Documentation
+### Project-2: Playground / Toggle System for Live Documentation
 
 #### Brief Explanation
 
@@ -111,13 +111,13 @@ An edit mechanism that would allow users to change, add, or otherwise modify pro
 
 Medium
 
-#### Mentor
+#### Mentors
 
 Chandler Prall, Greg Thompson
 
 
 
-### Multi-Project Testing Suite
+### Project-3: Multi-Project Testing Suite
 
 #### Brief Explanation
 
@@ -144,7 +144,7 @@ As script or pattern of scripts that EUI engineers can run to:
 
 Medium
 
-#### Mentor
+#### Mentors
 
 Chandler Prall, Greg Thompson
 
