@@ -37,10 +37,8 @@ In your application please tell us about:
 
 If you want us to review your application before the final submission:
 
-* Create a Google Doc and add it as a draft in the [GSoC application](https://summerofcode.withgoogle.com).
-* Once you are ready for a review, share the document with the mentors listed for your project with the permission `Can comment` — see the screenshot below.
-
-![](share.png)
+* Create a Google Doc.
+* Add it as a draft in the [GSoC application](https://summerofcode.withgoogle.com) once you are ready for a review. Please, give it the permission `Can comment` for everybody with the link.
 
 Elastic is always seeking to diversify its contributors and especially welcomes applications from women from all backgrounds and people of color.
 
