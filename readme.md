@@ -47,11 +47,9 @@ Elastic is always seeking to diversify its contributors and especially welcomes 
 ## Team
 
 * [Aravind Putrevu](https://github.com/aravindputrevu) admin
-* [Chandler Prall](https://github.com/chandlerprall) mentor
-* [Dave Snider](https://github.com/snide) mentor
-* [Greg Thompson](https://github.com/thompsongl) mentor
 * [Philipp Krenn](https://github.com/xeraa) admin
 * [Stephanie Nissen](https://github.com/Stephanie-Nissen) admin
+* [Michail Yasonik](https://github.come/myasonik) mentor
 
 
 
@@ -64,92 +62,33 @@ Please start a question on our [GSoC Discuss group](https://discuss.elastic.co/c
 
 
 
-### Project-1: Automatic Documentation System for TypeScript Components
+### Project-1: Accessible combobox variants
 
 #### Brief Explanation
 
-A better automatic system for documenting EUI TypeScript components. Specifically, we're looking for a better method to extract the acceptable values for each prop on the API. This would be done through automatic transversal of the EUI components itself, combined with the type values from TS and our own inline comments.
+EUI has several different variants of comboboxes (where a user types and options are presented) however each is build differently. We'd like to rebuild all of our existing patterns on top of the same base components to provide a unified and accessible experience.
 
 #### Expected Results
 
-More accurate, robust prop documentation within the existing "Props" tab for each example section in component documentation. As the EUI team is nearing completion of complete TypeScript conversion, it is possible that the current type and prop traversal system can be entirely replaced.
+[EuiCombobox](https://eui.elastic.co/#/forms/combo-box), [multi-select Filter Groups](https://eui.elastic.co/#/forms/filter-group#multi-select), and [EuiSuggest](https://eui.elastic.co/#/forms/suggest) are all built on top of [EuiSelectable](https://eui.elastic.co/#/forms/selectable). A key point of this is to bring the accessibility of EuiSelectable to the other components.
 
 #### Knowledge Prerequisites
 
 * TypeScript
-* React - medium
-* Elasticsearch - none and we will happily teach the little you would need to learn
+* React
+* [Accessibility](https://eui.elastic.co/#/guidelines/accessibility) - none but be ready to learn about screen readers (VoiceOver or NVDA) and [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices-1.2/)
 
 #### Skill Level
 
-Medium
+Medium-Hard
 
 #### Mentors
 
-Chandler Prall, Greg Thompson
-
-
-
-### Project-2: Playground / Toggle System for Live Documentation
-
-#### Brief Explanation
-
-A better playground / toggle system for [EUI live documentation](https://elastic.github.io/eui/). Right now we have flat, read-only code displayed next to static examples. It would be nice if people could change the code examples in-browser on our docs site and see the changes live in the examples.
-
-#### Expected Results
-
-An edit mechanism that would allow users to change, add, or otherwise modify props and content in rendered examples.
-
-#### Knowledge Prerequisites
-
-* React - medium
-* Elasticsearch - none and we will happily teach the little you would need to learn
-
-#### Skill Level
-
-Medium
-
-#### Mentors
-
-Chandler Prall, Greg Thompson
-
-
-
-### Project-3: Multi-Project Testing Suite
-
-#### Brief Explanation
-
-Automated testing for projects and deployments that we expect EUI to support. Currently, we rely on manual build steps or testing suites (functional and/or unit tests) provided by consuming applications to check environment compatibility and catch instances of breaking API changes. Conversion to and adoption of TypeScript has helped at a low level, but we need broader, less manual means of understanding support coverage.
-
-#### Expected Results
-
-As script or pattern of scripts that EUI engineers can run to:
-
-1. Install EUI in various project target instances; [elastic/eui#2760](https://github.com/elastic/eui/issues/2760) tracks the discussion about which projects to support.
-2. Run the consuming project's linting and / or testing suite(s).
-3. Run a production build of the consuming project.
-4. Detect and report failures and incompatibilities.
-
-
-
-#### Knowledge Prerequisites
-
-* Test automation
-* React - medium
-* Elasticsearch - none and we will happily teach the little you would need to learn
-
-#### Skill Level
-
-Medium
-
-#### Mentors
-
-Chandler Prall, Greg Thompson
-
+Michail Yasonik
 
 ### Other Ideas
 
-You may get some inspiration from our [existing issues](https://github.com/elastic/eui/issues).
+You may get some inspiration from our [existing issues](https://github.com/elastic/eui/issues) but keep in mind that this year we are limiting our projects to having an accessibility focus.
 
 Please discuss any project ideas on the [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community-ecosystem/elastic-gsoc) with us before submitting to maximize your chances of being accepted.
 
