@@ -197,45 +197,6 @@ Robert Monfera, Michail Yasonik, TBD
 
 
 
-### Project-5: Supplementary Geographic Data in Elastic Maps Service (EMS)
-
-
-
-#### Explanation
-Find, integrate and build automation tools for new types of Geo-relevant data.  Today Elastic uses Open Source data and tools for its [Elastic Maps Service](https://www.elastic.co/elastic-maps-service).  We’re using data from OpenStreetMap and Natural Earth for topographic and boundary data.  But there’s more to spatial data than the map of something on the ground.  We also want to find different kinds of data like population, economic indicators and other metrics that provide important information about a country or city.  Much of this information is available freely and openly via organisations like the World Bank or the United Nations.  
-
-We want to find a way to gather this data, integrate it, assess it and to build the tools that will make it easy to work with.  And we want to make these tools open.
-
-#### Expected Results
-A recommendation on what to capture and which data is better to use.  Your research, analytical and communication skills will be required to help us understand the choices you make.
-
-Tooling to extract and update the data for use in EMS.
-
-#### Knowledge Prerequisites
-Should have:
-- Knowledge of data transformation and geospatial concepts
-
-Would be nice to have experience with
-- Geospatial Data Abstraction Library (GDAL), QGIS, and OpenStreetMap
-- RDF, WikiData
-- Node.js, Python, SPARQL, and the Elastic Stack
-
-#### Skill Level
-Medium
-
-#### You
-You’re into data science.  Maybe you use Kibana to organise and make sense of data.  With this project you’ll get to use technologies like SPARQL to query APIs and you’ll be writing scripts to extract data.
-
-You’ll get to know the APIs of potential providers and delve into the technology that allows for integration of data.  You’ll be adding to the types of data that people can use in data analysis projects.
-
-#### Mentor
-Jorge Sanz
-
-
-
-
-
-
 ### Other Ideas
 
 You may get some inspiration from our [existing issues](https://github.com/elastic/eui/issues) but keep in mind that this year we are limiting our projects to having an accessibility focus.
