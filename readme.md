@@ -86,6 +86,156 @@ Medium-Hard
 
 Michail Yasonik
 
+
+### Project-2: Alluvial diagram in @elastic/charts
+
+<img src="https://rawgraphs.io/static/alluvial_cover-5b6c32863e5a2afe77d0c41ea82504da.png" width="500px" />
+
+Example: https://datavizcatalogue.com/methods/parallel_sets.html
+
+
+#### Brief Explanation
+Introduce the alluvial diagram to @elastic/charts. These diagrams represent weighted flows among nodes, the links between nodes are proportional to the flow quantity.
+
+#### Expected Results
+A new Alluvial diagram type component that provides:
+- a formalized but flexible data structure
+- a set of interaction capabilities to explore the flow (tooltips, reordering nodes)
+- a set of configuration options to tweak the visual aspect of the flow: space between nodes, initial sorting order, node, and link styles
+- a set of usage examples and documentation
+
+
+#### Knowledge Prerequisites
+- SVG, Canvas2d or WebGL
+- JavaScript (ideally TypeScript or ES2015)
+- React, D3, or similar libraries
+- Experience in dynamic content generation, eg. data visualization, animation, or game development
+
+#### Timeline (tentative)
+- W1 familiarize with @elastic/charts API and internals
+- W2 familiarize with the alluvial diagram: gain a general understanding on when to use it and how to read it, what are the valuable interactions and evaluate good practices applied to that visualization.
+- W3-W8 start from a barebone new chart type implementation provided by the mentor,  prototype and iterate on the data processing and data representation. Outcomes are an alpha version of an alluvial diagram component, with a flexible data structure, configuration options and, at least, tooltip interaction on elements/flows.
+- W8-W10 clean up the code, provide good chart examples through Storybook with associated documentation
+
+#### Skill Level
+Medium
+
+#### Mentors
+Robert Monfera, TBD
+
+
+
+
+
+### Project-3: Parallel coordinates in @elastic/charts
+
+<img src="https://datavizproject.com/wp-content/uploads/2015/11/Sk%C3%A6rmbillede-2016-02-01-kl.-18.31.24.png" width="500" />
+
+Example: https://datavizcatalogue.com/methods/parallel_coordinates.html
+
+#### Brief Explanation
+Introduce the Parallel Coordinates chart in @elastic/charts. A Parallel coordinates plot is a way to visualize high-dimensional multivariate datasets.
+N-parallel lines are drawn to represent an n-dimensional space, and a data point is represented by the segments that connect the respective coordinate on each dimension space.
+
+#### Expected Results
+A new Parallel Coordinates component that provides:
+- a formalized but flexible data structure
+- a set of interaction capabilities to explore the data points (tooltips, data point highlights, dimension reordering via drag/drop, dimension filtering)
+- a set of configuration options to tweak the visual aspect: polyline colors, dimensions labels)
+- a set of usage examples and documentation
+
+#### Timeline (tentative)
+- W1 familiarize with @elastic/charts API and internals
+- W2 familiarize with the parallel coordinates: gain a general understanding on when to use it and how to read it, what are the valuable interactions and evaluate good practices applied to that visualization.
+- W3-W8 start from a barebone new chart type implementation provided by the mentor,  prototype and iterate on the data processing and data representation flow. Outcomes are an alpha version of a parallel coordinates component, with a flexible data structure, configuration options and, at least, highlight and tooltip interaction polylines.
+- W8-W10 clean up the code, provide good chart examples through Storybook with associated documentation
+
+
+#### Knowledge Prerequisites
+- SVG, Canvas2d or WebGL
+- JavaScript (ideally TypeScript or ES2015)
+- React, D3, or similar libraries
+- Experience in dynamic content generation, eg. data visualization, animation, or game development
+
+#### Skill Level
+High
+
+#### Mentors
+Robert Monfera, TBD
+
+
+### Project-3: Data sonification
+
+Inspirations:
+https://sonification.design
+https://www.ft.com/content/80269930-40c3-11e9-b896-fe36ec32aece
+
+#### Brief Explanation
+Sonification is the use of non-speech audio to convey information or perceptualize data. In the context of improving chart accessibility, we are looking to start adding simplified sonification using WebAudio to generate an audio track that represents slopes, twists, and trends in a cartesian chart.
+
+#### Expected Results
+Mapping functions that can transform a set of data points from a cartesian space into sounds, including sonic “tick marks” underlining the passage of time, text synthesis for values, and other embellishments.
+That mapping functions should feed from the data source of a chart, as well as its axis and other data, to produce sounds that reflect the data and chart elements and, if possible, to represent annotations or relationships between data.
+
+#### Knowledge Prerequisites
+- Audio experience (any of composing, synthesizer tool or music-making, Web Audio API knowledge)
+- JavaScript or Typescript
+
+#### Timeline (tentative)
+- W1 familiarize with @elastic/charts API and internals
+- W2 familiarize with data sonification: gain a general understanding of the various techniques used to map a datasource into synthesized sounds.
+- W3-W4 create a prototype able to use the WebAudioAPI to produce sounds based on array of data points and annotations eg. axis ticks (not required to be linked with @elastic/charts library at the beginning)
+- W4-W6 iterate through the prototype refining the sound harmonics to improve and provide a pleasant experience.
+- W7-W8 integrate that function into the chart library: an external action received by the chart library should trigger the sonification function for a cartesian chart rendered on screen.
+- W9-W10 clean up the code, provide good chart examples through Storybook with associated documentation
+
+#### Skill Level
+Medium-High
+
+#### Mentors
+Robert Monfera, Michail Yasonik, TBD
+
+
+
+### Project-5: Supplementary Geographic Data in Elastic Maps Service (EMS)
+
+
+
+#### Explanation
+Find, integrate and build automation tools for new types of Geo-relevant data.  Today Elastic uses Open Source data and tools for its Elastic Maps Service.  We’re using data from OpenStreetMap and Natural Earth for topographic and boundary data.  But there’s more to spatial data than the map of something on the ground.  We also want to find different kinds of data like population, economic indicators and other metrics that provide important information about a country or city.  Much of this information is available freely and openly via organisations like the World Bank or the United Nations.  
+
+We want to find a way to gather this data, integrate it, assess it and to build the tools that will make it easy to work with.  And we want to make these tools open.
+
+#### Expected Results
+A recommendation on what to capture and which data is better to use.  Your research, analytical and communication skills will be required to help us understand the choices you make.
+
+Tooling to extract and update the data for use in EMS.
+
+#### Knowledge Prerequisites
+Should have:
+- Knowledge of data transformation and geospatial concepts
+
+Would be nice to have experience with
+- Geospatial Data Abstraction Library (GDAL), QGIS, and OpenStreetMap
+- RDF, WikiData
+- Node.js, Python, SPARQL, and the Elastic Stack
+
+#### Skill Level
+Medium
+
+#### You
+You’re into data science.  Maybe you use Kibana to organise and make sense of data.  With this project you’ll get to use technologies like SPARQL to query APIs and you’ll be writing scripts to extract data.
+
+You’ll get to know the APIs of potential providers and delve into the technology that allows for integration of data.  You’ll be adding to the types of data that people can use in data analysis projects.
+
+#### Mentor
+Jorge Sanz
+
+
+
+
+
+
 ### Other Ideas
 
 You may get some inspiration from our [existing issues](https://github.com/elastic/eui/issues) but keep in mind that this year we are limiting our projects to having an accessibility focus.
