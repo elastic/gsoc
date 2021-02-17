@@ -202,7 +202,7 @@ Robert Monfera, Michail Yasonik, TBD
 
 
 #### Explanation
-Find, integrate and build automation tools for new types of Geo-relevant data.  Today Elastic uses Open Source data and tools for its Elastic Maps Service.  We’re using data from OpenStreetMap and Natural Earth for topographic and boundary data.  But there’s more to spatial data than the map of something on the ground.  We also want to find different kinds of data like population, economic indicators and other metrics that provide important information about a country or city.  Much of this information is available freely and openly via organisations like the World Bank or the United Nations.  
+Find, integrate and build automation tools for new types of Geo-relevant data.  Today Elastic uses Open Source data and tools for its [Elastic Maps Service](https://www.elastic.co/elastic-maps-service).  We’re using data from OpenStreetMap and Natural Earth for topographic and boundary data.  But there’s more to spatial data than the map of something on the ground.  We also want to find different kinds of data like population, economic indicators and other metrics that provide important information about a country or city.  Much of this information is available freely and openly via organisations like the World Bank or the United Nations.  
 
 We want to find a way to gather this data, integrate it, assess it and to build the tools that will make it easy to work with.  And we want to make these tools open.
 
