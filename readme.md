@@ -208,4 +208,4 @@ Please discuss any project ideas on the [GSoC Discuss group](https://discuss.ela
 
 ## I Need Help
 
-For all questions, like the application process or your pull request, head over to our [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community-ecosystem/elastic-gsoc).-->
+For all questions, like the application process or your pull request, head over to our [GSoC Discuss group](https://discuss.elastic.co/c/elastic-community-ecosystem/elastic-gsoc). -->
