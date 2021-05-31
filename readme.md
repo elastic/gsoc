@@ -1,6 +1,7 @@
 # Elastic's Google Summer of Code
 
-[Elastic](https://www.elastic.co) is not participating in Google Summer of Code 2021.  <!--excited to participate in the Google Summer of Code 2021 program, and we hope that you are too!
+[Elastic](https://www.elastic.co) is not participating in Google Summer of Code 2021.
+<!-- excited to participate in the Google Summer of Code 2021 program, and we hope that you are too!
 
 This readme will get you started with project ideas, mentors, where to ask questions, and how to apply. Please note that this year we are only participating with the [Elastic UI](https://github.com/elastic/eui) and [Elastic Charts](https://github.com/elastic/elastic-charts) repositories.
 
